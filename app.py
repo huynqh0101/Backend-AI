@@ -20,10 +20,17 @@ def get_lightrag_response(question: str):
 
     # Cấu trúc trả về phải nhất quán để NestJS có thể xử lý
     return {
-        "answer": f"Đây là câu trả lời được tạo bởi LightRAG cho câu hỏi: '{question}'",
+        "answer": (
+            "Theo kiến thức Đông y, bài thuốc chữa sốt cao hiệu quả nhất là Cháo Lá Tre Thạch Cao:\n"
+            "- Thành phần: 200g lá tre tươi, 100g thạch cao sống, 100g gạo tẻ.\n"
+            "- Cách chế biến: Sắc lá tre và thạch cao, lấy nước bỏ bã, nấu cháo với gạo tẻ.\n"
+            "- Liều dùng: Mỗi ngày ăn 2–3 lần.\n"
+            "- Công hiệu: Hạ hỏa, giải khát, bổ phổi.\n"
+            "- Chú ý: Ngừng dùng khi hết sốt.\n"
+            "Ngoài ra, các bài thuốc như Nước Giải Khát Ngũ Vị, Rau Gan Chó với Đường Phèn cũng hỗ trợ hạ sốt."
+        ),
         "sources": [
-            { "document": "TaiLieuSo1.pdf", "page": 4, "score": 0.91 },
-            { "document": "HuongDanSuDung.docx", "page": 1, "score": 0.85 }
+            { "document": "DongY_BaiThuoc.txt", "page": 1, "score": 0.99 }
         ]
     }
 
