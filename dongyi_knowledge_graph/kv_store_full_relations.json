@@ -1,0 +1,318 @@
+{
+  "doc-31ccca9361a18ec16adcb2375f9b3200": {
+    "relation_pairs": [
+      [
+        "Sắc",
+        "Thạch Cao"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Gạo Tẻ"
+      ],
+      [
+        "Bổ Phổi",
+        "Cháo Lá Tre Thạch Cao"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Lá Tre"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Hạ Hỏa"
+      ],
+      [
+        "Hạ Hỏa",
+        "Lá Tre"
+      ],
+      [
+        "Lá Tre",
+        "Sắc"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Giải Phiền"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Sốt Cao"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Thạch Cao"
+      ],
+      [
+        "Hạ Hỏa",
+        "Thạch Cao"
+      ],
+      [
+        "Cháo Lá Tre Thạch Cao",
+        "Giải Khát"
+      ]
+    ],
+    "count": 12,
+    "create_time": 1761298540,
+    "update_time": 1761298540,
+    "_id": "doc-31ccca9361a18ec16adcb2375f9b3200"
+  },
+  "doc-6f6af78b8656c632b4a10a321b73aa8f": {
+    "relation_pairs": [
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Nước Mã Thầy"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Nước Ngó Sen"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Nước Mía"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Nước Rễ Lau Sậy"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Sốt Cao"
+      ],
+      [
+        "Khỏi Khát",
+        "Nước Giải Khát Ngũ Vị"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Thanh Nhiệt"
+      ],
+      [
+        "Method",
+        "Nước Giải Khát Ngũ Vị"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Nước Quả Lê"
+      ],
+      [
+        "Nước Giải Khát Ngũ Vị",
+        "Nước Mạch Môn Đông"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1761298622,
+    "update_time": 1761298622,
+    "_id": "doc-6f6af78b8656c632b4a10a321b73aa8f"
+  },
+  "doc-5154c79ff39b3a5965c9452e5a9bb48d": {
+    "relation_pairs": [
+      [
+        "Cảm Cúm Sốt Cao",
+        "Rau Gan Chó"
+      ],
+      [
+        "Rau Gan Chó",
+        "Tính Hàn"
+      ],
+      [
+        "Rau Gan Chó",
+        "Thanh Nhiệt Giải Độc"
+      ],
+      [
+        "Người Già",
+        "Rau Gan Chó"
+      ],
+      [
+        "Rau Gan Chó",
+        "Đường Phèn"
+      ],
+      [
+        "Bài Thuốc Dân Gian Số 3",
+        "Bệnh Nhiệt"
+      ],
+      [
+        "Bệnh Nhiệt",
+        "Rau Gan Chó"
+      ],
+      [
+        "Kháng Viêm",
+        "Rau Gan Chó"
+      ],
+      [
+        "Bài Thuốc Dân Gian Số 3",
+        "Cảm Cúm Sốt Cao"
+      ],
+      [
+        "Rau Gan Chó",
+        "Trẻ Em"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1761298708,
+    "update_time": 1761298708,
+    "_id": "doc-5154c79ff39b3a5965c9452e5a9bb48d"
+  },
+  "doc-16fe41e2d63b0767919dc5eed3984b33": {
+    "relation_pairs": [
+      [
+        "Bài Thuốc Quý Số 4",
+        "Hết Buồn Phiền"
+      ],
+      [
+        "Bài Thuốc Quý Số 4",
+        "Thanh Nhiệt"
+      ],
+      [
+        "Bài Thuốc Quý Số 4",
+        "Sừng Sơn Dương"
+      ],
+      [
+        "Cây Câu Đằng",
+        "Thanh Nhiệt Giải Độc"
+      ],
+      [
+        "Bài Thuốc Quý Số 4",
+        "Cây Câu Đằng"
+      ],
+      [
+        "Sừng Sơn Dương",
+        "Thanh Nhiệt Lương Huyết"
+      ],
+      [
+        "Bài Thuốc Quý Số 4",
+        "Sốt Cao"
+      ],
+      [
+        "Bài Thuốc Quý Số 4",
+        "Sắc"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1761298787,
+    "update_time": 1761298787,
+    "_id": "doc-16fe41e2d63b0767919dc5eed3984b33"
+  },
+  "doc-9a736f5faa34d293778ee90af5ca8377": {
+    "relation_pairs": [
+      [
+        "Bột Sừng Trâu",
+        "Sừng Trâu"
+      ],
+      [
+        "2 Lần Trong Ngày",
+        "Bột Sừng Trâu"
+      ],
+      [
+        "Bột Sừng Trâu",
+        "Cắt Cơn Ho"
+      ],
+      [
+        "Bột Sừng Trâu",
+        "Sốt Cao"
+      ],
+      [
+        "1.5–3g",
+        "Bột Sừng Trâu"
+      ],
+      [
+        "Sừng Trâu",
+        "Thanh Nhiệt"
+      ],
+      [
+        "Bột Sừng Trâu",
+        "Thanh Nhiệt"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1761298865,
+    "update_time": 1761298865,
+    "_id": "doc-9a736f5faa34d293778ee90af5ca8377"
+  },
+  "doc-13f2450527aa08e5bbd771ab12cc9506": {
+    "relation_pairs": [
+      [
+        "Bột Ngọc Trai",
+        "Công Thức Đặc Biệt Số 6"
+      ],
+      [
+        "Công Thức Đặc Biệt Số 6",
+        "Sinh Huyết"
+      ],
+      [
+        "Công Thức Đặc Biệt Số 6",
+        "Thanh Nhiệt"
+      ],
+      [
+        "Sunfat Natri",
+        "Sunfat Natri Thanh Nhiệt Nhuận Tràng"
+      ],
+      [
+        "Công Thức Đặc Biệt Số 6",
+        "Phụ Nữ Có Thai"
+      ],
+      [
+        "Công Thức Đặc Biệt Số 6",
+        "Sốt Cao"
+      ],
+      [
+        "Công Thức Đặc Biệt Số 6",
+        "Sunfat Natri"
+      ],
+      [
+        "Bột Ngọc Trai",
+        "Ngọc Trai An Thần Định Kinh"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1761298938,
+    "update_time": 1761298938,
+    "_id": "doc-13f2450527aa08e5bbd771ab12cc9506"
+  },
+  "doc-267e37936a1f14fe1de95b047b74b715": {
+    "relation_pairs": [
+      [
+        "Bột Tằm",
+        "Nước Ngân Hoa"
+      ],
+      [
+        "Tằm Xác Ve Và Ngân Hoa",
+        "Xác Ve"
+      ],
+      [
+        "Con Tằm",
+        "Tức Phong Định Kinh"
+      ],
+      [
+        "Mát Phổi",
+        "Tằm Xác Ve Và Ngân Hoa"
+      ],
+      [
+        "Tức Phong Định Kinh",
+        "Xác Ve"
+      ],
+      [
+        "Con Tằm",
+        "Tằm Xác Ve Và Ngân Hoa"
+      ],
+      [
+        "Ngân Hoa",
+        "Tằm Xác Ve Và Ngân Hoa"
+      ],
+      [
+        "Sốt Cao",
+        "Tằm Xác Ve Và Ngân Hoa"
+      ],
+      [
+        "Thanh Nhiệt",
+        "Tằm Xác Ve Và Ngân Hoa"
+      ],
+      [
+        "Ngân Hoa",
+        "Thanh Nhiệt Giải Độc"
+      ]
+    ],
+    "count": 10,
+    "create_time": 1761299025,
+    "update_time": 1761299025,
+    "_id": "doc-267e37936a1f14fe1de95b047b74b715"
+  }
+}

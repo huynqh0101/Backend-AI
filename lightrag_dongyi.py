@@ -216,7 +216,7 @@ async def gemini_llm_model_func(prompt, system_prompt=None, history_messages=[],
         combined_prompt += f"user: {prompt}"
 
         response = client.models.generate_content(
-            model="gemini-1.5-flash",
+            model="gemini-2.0-flash",
             contents=[combined_prompt],
             config=types.GenerateContentConfig(max_output_tokens=1000, temperature=0.1),
         )

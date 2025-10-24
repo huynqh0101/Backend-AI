@@ -1,0 +1,542 @@
+{
+  "Cháo Lá Tre Thạch Cao": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Cháo Lá Tre Thạch Cao"
+  },
+  "Lá Tre": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Lá Tre"
+  },
+  "Thạch Cao": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Thạch Cao"
+  },
+  "Gạo Tẻ": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Gạo Tẻ"
+  },
+  "Sốt Cao": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200",
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f",
+      "chunk-16fe41e2d63b0767919dc5eed3984b33",
+      "chunk-9a736f5faa34d293778ee90af5ca8377",
+      "chunk-13f2450527aa08e5bbd771ab12cc9506",
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 6,
+    "update_time": 1761298953,
+    "_id": "Sốt Cao"
+  },
+  "Hạ Hỏa": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Hạ Hỏa"
+  },
+  "Giải Khát": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Giải Khát"
+  },
+  "Giải Phiền": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298465,
+    "update_time": 1761298465,
+    "_id": "Giải Phiền"
+  },
+  "Bổ Phổi": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200"
+    ],
+    "count": 1,
+    "create_time": 1761298493,
+    "update_time": 1761298493,
+    "_id": "Bổ Phổi"
+  },
+  "Sắc": {
+    "chunk_ids": [
+      "chunk-31ccca9361a18ec16adcb2375f9b3200",
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d",
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 3,
+    "update_time": 1761298750,
+    "_id": "Sắc"
+  },
+  "Nước Giải Khát Ngũ Vị": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Giải Khát Ngũ Vị"
+  },
+  "Nước Quả Lê": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Quả Lê"
+  },
+  "Nước Mã Thầy": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Mã Thầy"
+  },
+  "Nước Ngó Sen": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Ngó Sen"
+  },
+  "Nước Rễ Lau Sậy": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Rễ Lau Sậy"
+  },
+  "Nước Mạch Môn Đông": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Mạch Môn Đông"
+  },
+  "Nước Mía": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298553,
+    "update_time": 1761298553,
+    "_id": "Nước Mía"
+  },
+  "Thanh Nhiệt": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f",
+      "chunk-16fe41e2d63b0767919dc5eed3984b33",
+      "chunk-9a736f5faa34d293778ee90af5ca8377",
+      "chunk-13f2450527aa08e5bbd771ab12cc9506",
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 5,
+    "update_time": 1761298953,
+    "_id": "Thanh Nhiệt"
+  },
+  "Khỏi Khát": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298579,
+    "update_time": 1761298579,
+    "_id": "Khỏi Khát"
+  },
+  "Method": {
+    "chunk_ids": [
+      "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+    ],
+    "count": 1,
+    "create_time": 1761298579,
+    "update_time": 1761298579,
+    "_id": "Method"
+  },
+  "Rau Gan Chó": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Rau Gan Chó"
+  },
+  "Đường Phèn": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Đường Phèn"
+  },
+  "Bệnh Nhiệt": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Bệnh Nhiệt"
+  },
+  "Cảm Cúm Sốt Cao": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Cảm Cúm Sốt Cao"
+  },
+  "Bài Thuốc Dân Gian": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Bài Thuốc Dân Gian"
+  },
+  "Trẻ Em": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Trẻ Em"
+  },
+  "Người Già": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298636,
+    "update_time": 1761298636,
+    "_id": "Người Già"
+  },
+  "Tính Hàn": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298663,
+    "update_time": 1761298663,
+    "_id": "Tính Hàn"
+  },
+  "Thanh Nhiệt Giải Độc": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d",
+      "chunk-16fe41e2d63b0767919dc5eed3984b33",
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 3,
+    "update_time": 1761298979,
+    "_id": "Thanh Nhiệt Giải Độc"
+  },
+  "Kháng Viêm": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298663,
+    "update_time": 1761298663,
+    "_id": "Kháng Viêm"
+  },
+  "Bài Thuốc Dân Gian Số 3": {
+    "chunk_ids": [
+      "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+    ],
+    "count": 1,
+    "create_time": 1761298663,
+    "update_time": 1761298663,
+    "_id": "Bài Thuốc Dân Gian Số 3"
+  },
+  "Sừng Sơn Dương": {
+    "chunk_ids": [
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 1,
+    "create_time": 1761298722,
+    "update_time": 1761298722,
+    "_id": "Sừng Sơn Dương"
+  },
+  "Cây Câu Đằng": {
+    "chunk_ids": [
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 1,
+    "create_time": 1761298722,
+    "update_time": 1761298722,
+    "_id": "Cây Câu Đằng"
+  },
+  "Hết Buồn Phiền": {
+    "chunk_ids": [
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 1,
+    "create_time": 1761298722,
+    "update_time": 1761298722,
+    "_id": "Hết Buồn Phiền"
+  },
+  "Thanh Nhiệt Lương Huyết": {
+    "chunk_ids": [
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 1,
+    "create_time": 1761298722,
+    "update_time": 1761298722,
+    "_id": "Thanh Nhiệt Lương Huyết"
+  },
+  "Bài Thuốc Quý Số 4": {
+    "chunk_ids": [
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 1,
+    "create_time": 1761298722,
+    "update_time": 1761298722,
+    "_id": "Bài Thuốc Quý Số 4"
+  },
+  "Nước": {
+    "chunk_ids": [
+      "chunk-16fe41e2d63b0767919dc5eed3984b33"
+    ],
+    "count": 1,
+    "create_time": 1761298750,
+    "update_time": 1761298750,
+    "_id": "Nước"
+  },
+  "Bột Sừng Trâu": {
+    "chunk_ids": [
+      "chunk-9a736f5faa34d293778ee90af5ca8377"
+    ],
+    "count": 1,
+    "create_time": 1761298807,
+    "update_time": 1761298807,
+    "_id": "Bột Sừng Trâu"
+  },
+  "Sắc Đặc Bột Sừng Trâu Lấy Nước": {
+    "chunk_ids": [
+      "chunk-9a736f5faa34d293778ee90af5ca8377"
+    ],
+    "count": 1,
+    "create_time": 1761298807,
+    "update_time": 1761298807,
+    "_id": "Sắc Đặc Bột Sừng Trâu Lấy Nước"
+  },
+  "Cắt Cơn Ho": {
+    "chunk_ids": [
+      "chunk-9a736f5faa34d293778ee90af5ca8377"
+    ],
+    "count": 1,
+    "create_time": 1761298807,
+    "update_time": 1761298807,
+    "_id": "Cắt Cơn Ho"
+  },
+  "Sừng Trâu": {
+    "chunk_ids": [
+      "chunk-9a736f5faa34d293778ee90af5ca8377"
+    ],
+    "count": 1,
+    "create_time": 1761298807,
+    "update_time": 1761298807,
+    "_id": "Sừng Trâu"
+  },
+  "1.5–3g": {
+    "chunk_ids": [
+      "chunk-9a736f5faa34d293778ee90af5ca8377"
+    ],
+    "count": 1,
+    "create_time": 1761298807,
+    "update_time": 1761298807,
+    "_id": "1.5–3g"
+  },
+  "2 Lần Trong Ngày": {
+    "chunk_ids": [
+      "chunk-9a736f5faa34d293778ee90af5ca8377"
+    ],
+    "count": 1,
+    "create_time": 1761298807,
+    "update_time": 1761298807,
+    "_id": "2 Lần Trong Ngày"
+  },
+  "Bột Ngọc Trai": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298880,
+    "update_time": 1761298880,
+    "_id": "Bột Ngọc Trai"
+  },
+  "Sunfat Natri": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298880,
+    "update_time": 1761298880,
+    "_id": "Sunfat Natri"
+  },
+  "Công Thức Đặc Biệt Số 6": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298880,
+    "update_time": 1761298880,
+    "_id": "Công Thức Đặc Biệt Số 6"
+  },
+  "Sinh Huyết": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298880,
+    "update_time": 1761298880,
+    "_id": "Sinh Huyết"
+  },
+  "Phụ Nữ Có Thai": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298880,
+    "update_time": 1761298880,
+    "_id": "Phụ Nữ Có Thai"
+  },
+  "Ngọc Trai An Thần Định Kinh": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298880,
+    "update_time": 1761298880,
+    "_id": "Ngọc Trai An Thần Định Kinh"
+  },
+  "Sunfat Natri Thanh Nhiệt Nhuận Tràng": {
+    "chunk_ids": [
+      "chunk-13f2450527aa08e5bbd771ab12cc9506"
+    ],
+    "count": 1,
+    "create_time": 1761298906,
+    "update_time": 1761298906,
+    "_id": "Sunfat Natri Thanh Nhiệt Nhuận Tràng"
+  },
+  "Tằm Xác Ve Và Ngân Hoa": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298953,
+    "update_time": 1761298953,
+    "_id": "Tằm Xác Ve Và Ngân Hoa"
+  },
+  "Con Tằm": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298953,
+    "update_time": 1761298953,
+    "_id": "Con Tằm"
+  },
+  "Xác Ve": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298953,
+    "update_time": 1761298953,
+    "_id": "Xác Ve"
+  },
+  "Ngân Hoa": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298953,
+    "update_time": 1761298953,
+    "_id": "Ngân Hoa"
+  },
+  "Nước Ngân Hoa": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298953,
+    "update_time": 1761298953,
+    "_id": "Nước Ngân Hoa"
+  },
+  "Bột Tằm": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298953,
+    "update_time": 1761298953,
+    "_id": "Bột Tằm"
+  },
+  "Mát Phổi": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298979,
+    "update_time": 1761298979,
+    "_id": "Mát Phổi"
+  },
+  "Tức Phong Định Kinh": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298979,
+    "update_time": 1761298979,
+    "_id": "Tức Phong Định Kinh"
+  },
+  "Nước Sôi": {
+    "chunk_ids": [
+      "chunk-267e37936a1f14fe1de95b047b74b715"
+    ],
+    "count": 1,
+    "create_time": 1761298979,
+    "update_time": 1761298979,
+    "_id": "Nước Sôi"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "chunk-31ccca9361a18ec16adcb2375f9b3200": {
+    "tokens": 198,
+    "content": "Cháo Lá Tre Thạch Cao - Bài thuốc hạ sốt số 1\n        \n        Chữa trị: Sốt cao (nhiệt độ cơ thể trên 39°C).\n        Thành phần: 200g lá tre tươi rửa sạch, 100g thạch cao sống, 100g gạo tẻ.\n        Cách chế biến: Cho lá tre và thạch cao vào 500ml nước sắc kỹ, lấy nước bỏ bã. \n        Cho gạo tẻ vào nước thuốc vừa sắc, nấu thành cháo.\n        Liều dùng: Mỗi ngày ăn 2–3 lần.\n        Công hiệu: Hạ hỏa, giải khát, giải phiền, bổ phổi.\n        Chú ý: Khi nào cơn sốt lui thì ngừng uống thuốc.\n        Nguyên lý: Lá tre có tính hàn, thanh nhiệt giải độc. Thạch cao thanh nhiệt tả hỏa.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-31ccca9361a18ec16adcb2375f9b3200",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:d76ff30d3df125208aec7bfcb3b599d0",
+      "default:extract:7bee86121527d1588f3bdc262eefbf8c"
+    ],
+    "create_time": 1761298452,
+    "update_time": 1761298465,
+    "_id": "chunk-31ccca9361a18ec16adcb2375f9b3200"
+  },
+  "chunk-6f6af78b8656c632b4a10a321b73aa8f": {
+    "tokens": 163,
+    "content": "Nước Giải Khát Ngũ Vị - Công thức hạ sốt số 2\n        \n        Chữa trị: Sốt cao.\n        Thành phần: Nước quả lê, nước mã thầy, nước ngó sen, nước rễ lau sậy, nước mạch môn đông (hoặc nước mía).\n        Cách chế biến: Lấy các loại nước trên với lượng bằng nhau, quấy đều, để lạnh.\n        Liều dùng: Uống thay nước hàng ngày.\n        Công hiệu: Thanh nhiệt, khỏi khát.\n        Nguyên lý: Tất cả các thành phần đều có tính mát, sinh tân dịch, thanh nhiệt giải khát.\n        Đặc điểm: Đây là phương thuốc tự nhiên, an toàn, không tác dụng phụ.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-6f6af78b8656c632b4a10a321b73aa8f",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:c99ebddfafecf08a4e127bb346d24768",
+      "default:extract:82cfdc8ad22544378e366f0e8981782a"
+    ],
+    "create_time": 1761298541,
+    "update_time": 1761298553,
+    "_id": "chunk-6f6af78b8656c632b4a10a321b73aa8f"
+  },
+  "chunk-5154c79ff39b3a5965c9452e5a9bb48d": {
+    "tokens": 144,
+    "content": "Rau Gan Chó với Đường Phèn - Bài thuốc dân gian số 3\n        \n        Chữa trị: Bệnh nhiệt và cảm cúm sốt cao.\n        Thành phần: 30–60g rau gan chó, đường phèn vừa đủ.\n        Cách chế biến: Sắc rau gan chó lấy nước, cho đường phèn vào.\n        Liều dùng: Uống thay nước chè trong ngày.\n        Công hiệu: Điều trị liên tục sẽ giúp làm lui cơn sốt.\n        Nguyên lý: Rau gan chó có tính hàn, thanh nhiệt giải độc, kháng viêm.\n        Ứng dụng: Thích hợp với trẻ em và người già.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-5154c79ff39b3a5965c9452e5a9bb48d",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:ae43d106549f627d9f3c2bdfb15b2779",
+      "default:extract:27ec721df28b7e11657557cd9cc65de8"
+    ],
+    "create_time": 1761298623,
+    "update_time": 1761298636,
+    "_id": "chunk-5154c79ff39b3a5965c9452e5a9bb48d"
+  },
+  "chunk-16fe41e2d63b0767919dc5eed3984b33": {
+    "tokens": 145,
+    "content": "Sừng Sơn Dương và Cây Câu Đằng - Bài thuốc quý số 4\n        \n        Chữa trị: Sốt cao.\n        Thành phần: Sừng sơn dương 30g, cây câu đằng 6–10g.\n        Cách chế biến: Cho nước vào sắc cùng nhau, lấy nước uống.\n        Công hiệu: Thanh nhiệt, hết buồn phiền.\n        Nguyên lý: Sừng sơn dương thanh nhiệt lương huyết, câu đằng thanh nhiệt giải độc.\n        Đặc điểm: Là bài thuốc quý hiếm, công hiệu mạnh.\n        Chú ý: Cần tìm nguồn sừng sơn dương chất lượng tốt.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-16fe41e2d63b0767919dc5eed3984b33",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0b341a04c38ea053ce6c8205e2afc4ea",
+      "default:extract:c5c6c3eb16e34dde39b522275384bd74"
+    ],
+    "create_time": 1761298709,
+    "update_time": 1761298722,
+    "_id": "chunk-16fe41e2d63b0767919dc5eed3984b33"
+  },
+  "chunk-9a736f5faa34d293778ee90af5ca8377": {
+    "tokens": 133,
+    "content": "Bột Sừng Trâu - Dược liệu quý số 5\n        \n        Chữa trị: Sốt cao.\n        Thành phần: Bột sừng trâu.\n        Cách chế biến: Sắc đặc bột sừng trâu lấy nước.\n        Liều dùng: Uống mỗi ngày 1.5–3g, chia 2 lần trong ngày.\n        Công hiệu: Thanh nhiệt, cắt cơn ho.\n        Nguyên lý: Sừng trâu có tính hàn, thanh nhiệt lương huyết, giải độc.\n        Ứng dụng: Đặc biệt hiệu quả với sốt cao kèm ho.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-9a736f5faa34d293778ee90af5ca8377",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:be0cc5d8b7f5b933f5e22427736e8e12",
+      "default:extract:1120dcdc6a20328e6589927fc706d8e7"
+    ],
+    "create_time": 1761298788,
+    "update_time": 1761298807,
+    "_id": "chunk-9a736f5faa34d293778ee90af5ca8377"
+  },
+  "chunk-13f2450527aa08e5bbd771ab12cc9506": {
+    "tokens": 148,
+    "content": "Bột Ngọc Trai với Sunfat Natri - Công thức đặc biệt số 6\n        \n        Chữa trị: Sốt cao.\n        Thành phần: 0.3g bột ngọc trai nghiền nhỏ, 10g sunfat natri.\n        Cách chế biến: Hãm bột ngọc trai vào 1 bát nước sôi, sau đó cho sunfat natri vào.\n        Liều dùng: Uống hết trong 1 lần.\n        Công hiệu: Thanh nhiệt, sinh huyết.\n        Chú ý: Phụ nữ có thai không được dùng.\n        Nguyên lý: Ngọc trai an thần định kinh, sunfat natri thanh nhiệt nhuận tràng.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-13f2450527aa08e5bbd771ab12cc9506",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:9bcb4c6076565ab0aedb7880ee0fa1ee",
+      "default:extract:dddc803142335f8ae0bf194bc0217181"
+    ],
+    "create_time": 1761298866,
+    "update_time": 1761298880,
+    "_id": "chunk-13f2450527aa08e5bbd771ab12cc9506"
+  },
+  "chunk-267e37936a1f14fe1de95b047b74b715": {
+    "tokens": 156,
+    "content": "Tằm Xác Ve và Ngân Hoa - Công thức phức hợp số 7\n        \n        Chữa trị: Sốt cao.\n        Thành phần: 9g con tằm, 3g xác ve, 15g ngân hoa.\n        Cách chế biến: \n        - Nghiền tằm và xác ve thành bột.\n        - Sắc ngân hoa lấy nước.\n        - Uống bột tằm, xác ve với nước ngân hoa.\n        Biến thể: Nếu uống với nước sôi thì dùng 10g tằm, 12g xác ve.\n        Công hiệu: Thanh nhiệt, mát phổi.\n        Nguyên lý: Tằm và xác ve tức phong định kinh, ngân hoa thanh nhiệt giải độc.",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-267e37936a1f14fe1de95b047b74b715",
+    "file_path": "unknown_source",
+    "llm_cache_list": [
+      "default:extract:0b1961bf93f54135f4c72a7da4574093",
+      "default:extract:6c16a5f8bc5857e2294cd377c2fde007"
+    ],
+    "create_time": 1761298939,
+    "update_time": 1761298953,
+    "_id": "chunk-267e37936a1f14fe1de95b047b74b715"
+  }
+}
