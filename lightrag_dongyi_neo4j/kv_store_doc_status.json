@@ -1,0 +1,64 @@
+{
+  "doc-aca151ba33be839720138a5c6da4d541": {
+    "status": "processed",
+    "chunks_count": 15,
+    "chunks_list": [
+      "chunk-dd669ec5e8392e353af41f3864763e8b",
+      "chunk-a0b30e7ee3690573abc06fc6d88be01e",
+      "chunk-0e43a79780e0977d2efab34f49c95d4d",
+      "chunk-6cd3fb3c2608d553159445feec34f841",
+      "chunk-5de59a439d43550b85df7da5640d731d",
+      "chunk-ce40552fe19b5dca50eafe76c98a9b3f",
+      "chunk-a0e6aa1c623dfe9242bfa74aa2f5492f",
+      "chunk-10de4c00d7523830026190591d1d12e5",
+      "chunk-6786afbfb4d548114c919a0fb33dd3ef",
+      "chunk-b19e59acac12e558bdef4451178d7fcd",
+      "chunk-5e2a5e140ee874372337a5a651a0bab0",
+      "chunk-4a31be1f025b002536ecadb61cde5293",
+      "chunk-4fea9640cd7e1e6a2a130709c80f7693",
+      "chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd",
+      "chunk-823991737e4cc613d9c031b86b76dd50"
+    ],
+    "content_summary": "BÀI THUỐC: Cháo Lá Tre, Thạch Cao\nChữa trị: Sốt cao (nhiệt độ cơ thể trên 39°C).\nLiều lượng: Dùng 200g lá tre tươi, rửa sạch, 100g thạch cao sống, cho vào 500ml nước sắc kỹ lấy nước bỏ bã. Cho 100g gạo tẻ, dùng nước thuốc vừa sắc, nấu thành cháo. Mỗi...",
+    "content_length": 19949,
+    "created_at": "2025-11-12T06:58:28.861204+00:00",
+    "updated_at": "2025-11-12T08:00:45.880591+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251112_135828_a5f1b830",
+    "metadata": {
+      "processing_start_time": 1762930708,
+      "processing_end_time": 1762934445
+    }
+  },
+  "doc-e24adf0827d8e36b53e940ac1c12615d": {
+    "status": "processing",
+    "chunks_count": 16,
+    "chunks_list": [
+      "chunk-ac0b8c267d68c337039386fc86ac6a56",
+      "chunk-10920de87b924996267d34d0c55602cd",
+      "chunk-bc5b5bb0480cad9b193caa98c3100438",
+      "chunk-5662316a964107e0a9521200ed2b92ec",
+      "chunk-31e78030854c396420cf9313fba243ba",
+      "chunk-81e59d9f1c1bb876c338502912879130",
+      "chunk-d30e84b7e0019d8e0e1addec1379ab66",
+      "chunk-0cf86b909a6e5b35faa4dd8f50297fd7",
+      "chunk-5551abaa93c30403d24e0926f201442f",
+      "chunk-f1c577cc54fa56f814d9ab782ef8626b",
+      "chunk-01894247c77fa699f5f7e5e719c10c44",
+      "chunk-473dc6db0f1856f6b271810f1c6556e0",
+      "chunk-fc693a4e519936ec1b6bd95cf586dc81",
+      "chunk-2663b15f9dc6dd37b8378f2c3555f6f0",
+      "chunk-c9c6bb334d03eb947b14ee499fa6ae7d",
+      "chunk-d2840505f9cc94053e3bb90a291246e0"
+    ],
+    "content_summary": "BÀI THUỐC: Cây Bấc Đèn, Sắc Với Mứt Quả Hồng\nChữa trị: Đái ra máu (bệnh trạng như trên).\nLiều lượng: Dùng 6g cây bấc đèn, 2 quả mứt hồng, 300ml nước. Sắc lấy 100ml, cho vào ít đường trắng. Uống nóng, ăn quả hồng. Mỗi ngày 2 lần.\nCông hiệu: Chữa huyết...",
+    "content_length": 19783,
+    "created_at": "2025-11-12T08:00:48.989515+00:00",
+    "updated_at": "2025-11-12T08:00:49.077309+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20251112_150048_c6d96a3a",
+    "metadata": {
+      "processing_start_time": 1762934449
+    }
+  }
+}

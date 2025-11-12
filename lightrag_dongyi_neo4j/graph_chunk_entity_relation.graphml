@@ -1,0 +1,3714 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="truncate" attr.type="string" />
+  <key id="d12" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d11" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d8" for="edge" attr.name="description" attr.type="string" />
+  <key id="d7" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d6" for="node" attr.name="truncate" attr.type="string" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Lá Tre">
+      <data key="d0">Lá Tre</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Lá tre là một loại cây được sử dụng trong y học cổ truyền.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933055</data>
+      <data key="d6" />
+    </node>
+    <node id="Thạch Cao">
+      <data key="d0">Thạch Cao</data>
+      <data key="d1">mineral</data>
+      <data key="d2">Thạch cao là một loại khoáng chất có tác dụng chữa trị.&lt;SEP&gt;Thạch cao sống 500g, đậu phụ 200g. Cho vào 500ml nước, quấy đều, đun sôi trong 1 tiếng. Cho ít muối vào. Ăn đậu phụ, uống nước canh.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b&lt;SEP&gt;chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933055</data>
+      <data key="d6" />
+    </node>
+    <node id="Sốt Cao">
+      <data key="d0">Sốt Cao</data>
+      <data key="d1">concept</data>
+      <data key="d2">Sốt cao là một trạng thái thể chất cần được điều trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933063</data>
+      <data key="d6" />
+    </node>
+    <node id="Gạo Tẻ">
+      <data key="d0">Gạo Tẻ</data>
+      <data key="d1">organization</data>
+      <data key="d2">Gạo tẻ là một loại thực phẩm được sử dụng trong y học cổ truyền.&lt;SEP&gt;Gạo tẻ is a food item used in the recipe.&lt;SEP&gt;Gạo tẻ là một loại thực phẩm được sử dụng trong y học cổ truyền để bổ tỳ và chữa trị các bệnh về đường tiêu hóa.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b&lt;SEP&gt;chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933063</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước Sắc">
+      <data key="d0">Nước Sắc</data>
+      <data key="d1">liquid</data>
+      <data key="d2">Nước sắc là một loại nước được tạo ra từ việc sắc các nguyên liệu thảo dược.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933070</data>
+      <data key="d6" />
+    </node>
+    <node id="Rau Gan Chó">
+      <data key="d0">Rau Gan Chó</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Rau gan chó là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933070</data>
+      <data key="d6" />
+    </node>
+    <node id="Đường Phèn">
+      <data key="d0">Đường Phèn</data>
+      <data key="d1">content</data>
+      <data key="d2">Đường phèn là một loại khoáng chất có tác dụng chữa trị.&lt;SEP&gt;Đường phèn is a type of sugar substitute used in traditional Vietnamese medicine.&lt;SEP&gt;Sugar is an ingredient used in the recipe.&lt;SEP&gt;Đường phèn is a type of sugar used in traditional medicine.&lt;SEP&gt;Một ít đường trắng. Ấu trùng chấm đường ăn. Ăn 1-2 lần sẽ khỏi</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b&lt;SEP&gt;chunk-5e2a5e140ee874372337a5a651a0bab0&lt;SEP&gt;chunk-10de4c00d7523830026190591d1d12e5&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933076</data>
+      <data key="d6" />
+    </node>
+    <node id="Cây Câu Đằng">
+      <data key="d0">Cây Câu Đằng</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Cây câu đằng là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933076</data>
+      <data key="d6" />
+    </node>
+    <node id="Sừng Sơn Dương Hãm">
+      <data key="d0">Sừng Sơn Dương Hãm</data>
+      <data key="d1">mineral</data>
+      <data key="d2">Sừng sơn dương là một loại khoáng chất có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933083</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Sừng Trâu">
+      <data key="d0">Bột Sừng Trâu</data>
+      <data key="d1">food</data>
+      <data key="d2">Bột sừng trâu là một loại thực phẩm được sử dụng trong y học cổ truyền.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933083</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Ngọc Trai Hòa Sunfat Natri">
+      <data key="d0">Bột Ngọc Trai Hòa Sunfat Natri</data>
+      <data key="d1">mineral</data>
+      <data key="d2">Bột ngọc trai hòa sunfat natri là một loại khoáng chất có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933090</data>
+      <data key="d6" />
+    </node>
+    <node id="Tằm">
+      <data key="d0">Tằm</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Tằm là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933090</data>
+      <data key="d6" />
+    </node>
+    <node id="Xác Ve">
+      <data key="d0">Xác Ve</data>
+      <data key="d1">mineral</data>
+      <data key="d2">Xác ve là một loại khoáng chất có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933096</data>
+      <data key="d6" />
+    </node>
+    <node id="Ngân Hoa">
+      <data key="d0">Ngân Hoa</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Ngân hoa là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933096</data>
+      <data key="d6" />
+    </node>
+    <node id="Mía">
+      <data key="d0">Mía</data>
+      <data key="d1">food</data>
+      <data key="d2">Mía là một loại thực phẩm được sử dụng trong y học cổ truyền.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933103</data>
+      <data key="d6" />
+    </node>
+    <node id="Rễ Lau Sậy">
+      <data key="d0">Rễ Lau Sậy</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Rễ lau sậy là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933103</data>
+      <data key="d6" />
+    </node>
+    <node id="Lá Song">
+      <data key="d0">Lá Song</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Lá song là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933111</data>
+      <data key="d6" />
+    </node>
+    <node id="Cây Mây">
+      <data key="d0">Cây Mây</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Cây mây là một loại cây có tác dụng chữa trị.</data>
+      <data key="d3">chunk-dd669ec5e8392e353af41f3864763e8b</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933111</data>
+      <data key="d6" />
+    </node>
+    <node id="ao">
+      <data key="d0">ao</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">A type of fruit used in traditional medicine.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933117</data>
+      <data key="d6" />
+    </node>
+    <node id="thịt lợn nạc">
+      <data key="d0">thịt lợn nạc</data>
+      <data key="d1">food</data>
+      <data key="d2">Thinly sliced pork used as an ingredient.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933117</data>
+      <data key="d6" />
+    </node>
+    <node id="nhừ">
+      <data key="d0">nhừ</data>
+      <data key="d1">food</data>
+      <data key="d2">A type of seafood used in traditional medicine.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933124</data>
+      <data key="d6" />
+    </node>
+    <node id="muối ăn">
+      <data key="d0">muối ăn</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">A type of salt used for seasoning.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933124</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Con Trai Biển">
+      <data key="d0">Bột Con Trai Biển</data>
+      <data key="d1">medicine</data>
+      <data key="d2">A traditional remedy for treating fever and chills.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933131</data>
+      <data key="d6" />
+    </node>
+    <node id="Câu Đằng">
+      <data key="d0">Câu Đằng</data>
+      <data key="d1">medicine</data>
+      <data key="d2">A traditional remedy for treating fever and chills.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933131</data>
+      <data key="d6" />
+    </node>
+    <node id="Mật Gấu">
+      <data key="d0">Mật Gấu</data>
+      <data key="d1">medicine</data>
+      <data key="d2">A traditional remedy for treating fever and chills.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933137</data>
+      <data key="d6" />
+    </node>
+    <node id="Giun Đất">
+      <data key="d0">Giun Đất</data>
+      <data key="d1">medicine</data>
+      <data key="d2">A traditional remedy for treating fever and chills.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933137</data>
+      <data key="d6" />
+    </node>
+    <node id="Đường Trắng">
+      <data key="d0">Đường Trắng</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">A type of sugar used for sweetening.&lt;SEP&gt;White sugar is an ingredient used in the recipe.&lt;SEP&gt;Đường trắng là một chất phụ gia phổ biến.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d&lt;SEP&gt;chunk-4a31be1f025b002536ecadb61cde5293&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933144</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Sừng Sơn Dương">
+      <data key="d0">Bột Sừng Sơn Dương</data>
+      <data key="d1">medicine</data>
+      <data key="d2">A traditional remedy for treating fever and chills.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933144</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước Sơn Dược">
+      <data key="d0">Nước Sơn Dược</data>
+      <data key="d1">medicine</data>
+      <data key="d2">A traditional remedy for treating various ailments, including fever and chills.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933151</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước Mía">
+      <data key="d0">Nước Mía</data>
+      <data key="d1">content</data>
+      <data key="d2">A type of sugar cane juice used as a sweetener.&lt;SEP&gt;Nước mía là một loại nước uống phổ biến.&lt;SEP&gt;Nước mía có tác dụng làm dịu loạn.&lt;SEP&gt;Nước mía có tác dụng thanh nhiệt.&lt;SEP&gt;Nước mía có tác dụng giảm đau.&lt;SEP&gt;Nước mía có tác dụng cầm máu.&lt;SEP&gt;Nước mía có tác dụng làm mát.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d&lt;SEP&gt;chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933151</data>
+      <data key="d6" />
+    </node>
+    <node id="Cháo Gạo">
+      <data key="d0">Cháo Gạo</data>
+      <data key="d1">food</data>
+      <data key="d2">A type of rice porridge used as a food item.</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933157</data>
+      <data key="d6" />
+    </node>
+    <node id="Ngó Sen">
+      <data key="d0">Ngó Sen</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Ngó sen là một loại cây được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.&lt;SEP&gt;Ngó sen is a type of Chinese herb used in traditional medicine.&lt;SEP&gt;Ngó sen is a plant used in traditional Vietnamese medicine.&lt;SEP&gt;Ngó sen is a plant used in traditional Chinese medicine.&lt;SEP&gt;Ngó sen là một loại cây thuốc.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f&lt;SEP&gt;chunk-4a31be1f025b002536ecadb61cde5293&lt;SEP&gt;chunk-10de4c00d7523830026190591d1d12e5&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933161</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Sơn Dược">
+      <data key="d0">Bột Sơn Dược</data>
+      <data key="d1">material</data>
+      <data key="d2">Bột sơn dược là một thành phần được thêm vào nước thuốc sắc để tăng cường hiệu quả điều trị.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933164</data>
+      <data key="d6" />
+    </node>
+    <node id="Phổi Lợn">
+      <data key="d0">Phổi Lợn</data>
+      <data key="d1">organ</data>
+      <data key="d2">Phổi lợn là một loại phổi được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933167</data>
+      <data key="d6" />
+    </node>
+    <node id="Hạnh Nhân">
+      <data key="d0">Hạnh Nhân</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hạnh nhân là một loại hạt được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933171</data>
+      <data key="d6" />
+    </node>
+    <node id="Vỏ Rễ Dâu">
+      <data key="d0">Vỏ Rễ Dâu</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Vỏ rễ dâu là một loại vỏ được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933174</data>
+      <data key="d6" />
+    </node>
+    <node id="Rễ Cỏ Tranh">
+      <data key="d0">Rễ Cỏ Tranh</data>
+      <data key="d1">content</data>
+      <data key="d2">Rễ Cỏ Tranh
+
+Rễ cỏ tranh là một loại rễ được sử dụng trong y học truyền thống để điều trị nhiều bệnh lý khác nhau. Theo các nguồn tin, Rễ cỏ tranh có tác dụng điều trị bệnh lao phổi, bệnh tiêu hóa, bệnh tim mạch, tăng cường miễn dịch, điều trị bệnh thận, bệnh gan, chống ung thư, điều hòa máu và chống viêm.
+
+Ngoài ra, Rễ cỏ tranh còn được coi là một loại cây thuốc, có tác dụng chữa bệnh. Tuy nhiên, cần lưu ý rằng các thông tin về Rễ cỏ tranh trong y học truyền thống có thể không được hỗ trợ bởi bằng chứng khoa học hiện đại, và việc sử dụng chúng như phương pháp điều trị cần được thực hiện dưới sự giám sát của chuyên gia y tế.
+
+Tóm lại, Rễ cỏ tranh là một loại rễ có nhiều tác dụng sức khỏe, nhưng cũng cần được sử dụng một cách cẩn thận và thông minh.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f&lt;SEP&gt;chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933174</data>
+      <data key="d6" />
+    </node>
+    <node id="Bạng Lan Hoa">
+      <data key="d0">Bạng Lan Hoa</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Bạng lan hoa là một loại hoa được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933181</data>
+      <data key="d6" />
+    </node>
+    <node id="Thịt Lợn Nạc">
+      <data key="d0">Thịt Lợn Nạc</data>
+      <data key="d1">food</data>
+      <data key="d2">Thịt lợn nạc là một loại thịt được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933181</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoài Sơn">
+      <data key="d0">Hoài Sơn</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hoài sơn là một loại rễ được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933188</data>
+      <data key="d6" />
+    </node>
+    <node id="Mộc Nhĩ">
+      <data key="d0">Mộc Nhĩ</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Mộc nhĩ treatment refers to a treatment for using mộc nhĩ as an ingredient.&lt;SEP&gt;Mộc nhĩ recipe is a recipe using mộc nhĩ as an ingredient.&lt;SEP&gt;Mộc nhĩ refers to a type of fungus.&lt;SEP&gt;Mộc nhĩ là một loại cây được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.&lt;SEP&gt;Mộc nhĩ is a traditional Vietnamese medicine.&lt;SEP&gt;Mộc Nhĩ là một loại thảo mộc được sử dụng trong y học cổ truyền để chữa trị ỉa ra máu do tỳ vị hư hàn và thấp nhiệt.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f&lt;SEP&gt;chunk-5de59a439d43550b85df7da5640d731d&lt;SEP&gt;chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd&lt;SEP&gt;chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933188</data>
+      <data key="d6" />
+    </node>
+    <node id="Đông Trùng Hạ Thảo">
+      <data key="d0">Đông Trùng Hạ Thảo</data>
+      <data key="d1">material</data>
+      <data key="d2">Đông trùng hạ thảo là một loại cây được sử dụng trong y học truyền thống để điều trị bệnh lao phổi.&lt;SEP&gt;Đông trùng hạ thảo is a type of Chinese herb used in traditional medicine.</data>
+      <data key="d3">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f&lt;SEP&gt;chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933195</data>
+      <data key="d6" />
+    </node>
+    <node id="Công hiệu">
+      <data key="d0">Công hiệu</data>
+      <data key="d1">concept</data>
+      <data key="d2">Thanh nhiệt, sinh huyết.&lt;SEP&gt;Chữa khỏi chảy máu chân răng, chảy máu cam, chảy máu dưới da do tiểu cầu giảm hay bệnh máu chậm đông gây ra. Nhưng phải điều trị thường xuyên, 1/2 năm 1 liệu trình.&lt;SEP&gt;Chữa khỏi chảy máu mũi, chảy máu chân răng do huyết hư, sinh nhiệt gây ra.&lt;SEP&gt;Chữa trị: Nôn ra máu (bệnh trạng như trên).&lt;SEP&gt;Chữa khỏi nôn ra máu, ho ra máu.&lt;SEP&gt;The ỏ tranh is said to have a specific effect on the body.</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0&lt;SEP&gt;chunk-4fea9640cd7e1e6a2a130709c80f7693&lt;SEP&gt;chunk-a0b30e7ee3690573abc06fc6d88be01e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933195</data>
+      <data key="d6" />
+    </node>
+    <node id="BÀI THUỐC">
+      <data key="d0">BÀI THUỐC</data>
+      <data key="d1">recipe</data>
+      <data key="d2">Ngó Sen, Táo Tàu, Cây Tế Thải&lt;SEP&gt;Ấu Trùng Ong, Đường Trắng&lt;SEP&gt;Nước Củ Cải, Đường Phèn&lt;SEP&gt;Canh Đậu Phụ, Thạch Cao&lt;SEP&gt;Bì Lợn, Táo Tàu</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933201</data>
+      <data key="d6" />
+    </node>
+    <node id="Liều lượng">
+      <data key="d0">Liều lượng</data>
+      <data key="d1">quantity</data>
+      <data key="d2">Lấy 500g bì lợn tươi, nước vừa đủ, nấu thành canh, cho vào 250g táo. Đun nhỏ lửa. Khi bì lợn chín nhừ, cho vào ít đường. Mỗi ngày ăn 1 lần.&lt;SEP&gt;Thạch cao sống 500g, đậu phụ 200g. Cho vào 500ml nước, quấy đều, đun sôi trong 1 tiếng. Cho ít muối vào. Ăn đậu phụ, uống nước canh.&lt;SEP&gt;Rau tế thải tươi 60g, ngó sen tươi 20g, táo 5 quả. Cho vào 2 bát nước sắc lấy 1 bát. Ăn táo uống nước; Mỗi ngày 2 lần.&lt;SEP&gt;Củ cải trắng rửa sạch, ép ra nước, cho đường phèn vừa đủ, quấy đều. Mỗi lần uống 100ml. Mỗi ngày uống 3 lần.&lt;SEP&gt;Dùng 3-5 con ấu trùng ong, một ít đường trắng. Ấu trùng chấm đường ăn. Ăn 1-2 lần sẽ khỏi</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933201</data>
+      <data key="d6" />
+    </node>
+    <node id="Cây Tế Thải">
+      <data key="d0">Cây Tế Thải</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Rau tế thải tươi 60g, ngó sen tươi 20g, táo 5 quả. Cho vào 2 bát nước sắc lấy 1 bát. Ăn táo uống nước; Mỗi ngày 2 lần.</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933208</data>
+      <data key="d6" />
+    </node>
+    <node id="ỏ tranh">
+      <data key="d0">ỏ tranh</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">The ỏ tranh is a type of mía used for medicinal purposes.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933208</data>
+      <data key="d6" />
+    </node>
+    <node id="100-130g mía">
+      <data key="d0">100-130g mía</data>
+      <data key="d1">measurementunit</data>
+      <data key="d2">A measurement unit for the quantity of mía.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933214</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước uống">
+      <data key="d0">Nước uống</data>
+      <data key="d1">liquid</data>
+      <data key="d2">A liquid used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933214</data>
+      <data key="d6" />
+    </node>
+    <node id="Mát máu">
+      <data key="d0">Mát máu</data>
+      <data key="d1">effect</data>
+      <data key="d2">The ỏ tranh is believed to cool the blood and stop bleeding.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933221</data>
+      <data key="d6" />
+    </node>
+    <node id="Cầm máu">
+      <data key="d0">Cầm máu</data>
+      <data key="d1">effect</data>
+      <data key="d2">The ỏ tranh is thought to constrict blood vessels and prevent excessive bleeding.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933221</data>
+      <data key="d6" />
+    </node>
+    <node id="Trung Quốc">
+      <data key="d0">Trung Quốc</data>
+      <data key="d1">location</data>
+      <data key="d2">Trung Quốc is a country where the ỏ tranh is used.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933228</data>
+      <data key="d6" />
+    </node>
+    <node id="Việt Nam">
+      <data key="d0">Việt Nam</data>
+      <data key="d1">location</data>
+      <data key="d2">Việt Nam is a country where the ỏ tranh might be used or referenced.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933228</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa kim ngân">
+      <data key="d0">Hoa kim ngân</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hoa kim ngân is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933235</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa hoàn phụ">
+      <data key="d0">Hoa hoàn phụ</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hoa hoàn phụ is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933235</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa tân di">
+      <data key="d0">Hoa tân di</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hoa tân di is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933241</data>
+      <data key="d6" />
+    </node>
+    <node id="Trương Nhĩ Tử">
+      <data key="d0">Trương Nhĩ Tử</data>
+      <data key="d1">person</data>
+      <data key="d2">Trương Nhĩ Tử is a person mentioned in the context of traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933241</data>
+      <data key="d6" />
+    </node>
+    <node id="Man kinh tử">
+      <data key="d0">Man kinh tử</data>
+      <data key="d1">concept</data>
+      <data key="d2">Man kinh tử is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933248</data>
+      <data key="d6" />
+    </node>
+    <node id="Thương nhĩ tử">
+      <data key="d0">Thương nhĩ tử</data>
+      <data key="d1">concept</data>
+      <data key="d2">Thương nhĩ tử is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933248</data>
+      <data key="d6" />
+    </node>
+    <node id="Cỏ phượng vĩ">
+      <data key="d0">Cỏ phượng vĩ</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Cỏ phượng vĩ is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933254</data>
+      <data key="d6" />
+    </node>
+    <node id="Hải đới">
+      <data key="d0">Hải đới</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hải đới is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933254</data>
+      <data key="d6" />
+    </node>
+    <node id="Tổ ong">
+      <data key="d0">Tổ ong</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Tổ ong is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933261</data>
+      <data key="d6" />
+    </node>
+    <node id="Xơ mướp">
+      <data key="d0">Xơ mướp</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Xơ mướp is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933261</data>
+      <data key="d6" />
+    </node>
+    <node id="Đậu đen">
+      <data key="d0">Đậu đen</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Đậu đen is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933267</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng gà">
+      <data key="d0">Trứng gà</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng gà is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933267</data>
+      <data key="d6" />
+    </node>
+    <node id="Đường trắng">
+      <data key="d0">Đường trắng</data>
+      <data key="d1">food</data>
+      <data key="d2">Đường trắng is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933274</data>
+      <data key="d6" />
+    </node>
+    <node id="Sao vàng">
+      <data key="d0">Sao vàng</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">Sao vàng is a component used in xơ mướp.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933274</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột">
+      <data key="d0">Bột</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">Bột is a component used in xơ mướp.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933281</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước sôi">
+      <data key="d0">Nước sôi</data>
+      <data key="d1">liquid</data>
+      <data key="d2">Nước sôi is a liquid used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933281</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng gà vỏ trắng">
+      <data key="d0">Trứng gà vỏ trắng</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng gà vỏ trắng is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933287</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa hoàn phụ vỏ trắng">
+      <data key="d0">Hoa hoàn phụ vỏ trắng</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hoa hoàn phụ vỏ trắng is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933287</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng gà vỏ trắng luộc chín">
+      <data key="d0">Trứng gà vỏ trắng luộc chín</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng gà vỏ trắng luộc chín is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933294</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa kim ngân vỏ trắng">
+      <data key="d0">Hoa kim ngân vỏ trắng</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hoa kim ngân vỏ trắng is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933294</data>
+      <data key="d6" />
+    </node>
+    <node id="Man kinh tử vỏ trắng">
+      <data key="d0">Man kinh tử vỏ trắng</data>
+      <data key="d1">concept</data>
+      <data key="d2">Man kinh tử vỏ trắng is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933302</data>
+      <data key="d6" />
+    </node>
+    <node id="Thương nhĩ tử vỏ trắng">
+      <data key="d0">Thương nhĩ tử vỏ trắng</data>
+      <data key="d1">concept</data>
+      <data key="d2">Thương nhĩ tử vỏ trắng is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933302</data>
+      <data key="d6" />
+    </node>
+    <node id="Cỏ phượng vĩ tươi">
+      <data key="d0">Cỏ phượng vĩ tươi</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Cỏ phượng vĩ tươi is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933309</data>
+      <data key="d6" />
+    </node>
+    <node id="Hải đới tươi">
+      <data key="d0">Hải đới tươi</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hải đới tươi is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933309</data>
+      <data key="d6" />
+    </node>
+    <node id="Tổ ong tươi">
+      <data key="d0">Tổ ong tươi</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Tổ ong tươi is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933317</data>
+      <data key="d6" />
+    </node>
+    <node id="Xơ mướp tươi">
+      <data key="d0">Xơ mướp tươi</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Xơ mướp tươi is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933317</data>
+      <data key="d6" />
+    </node>
+    <node id="Đậu đen tươi">
+      <data key="d0">Đậu đen tươi</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Đậu đen tươi is a natural object used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933324</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng gà tươi">
+      <data key="d0">Trứng gà tươi</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng gà tươi is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933324</data>
+      <data key="d6" />
+    </node>
+    <node id="Đường trắng tươi">
+      <data key="d0">Đường trắng tươi</data>
+      <data key="d1">food</data>
+      <data key="d2">Đường trắng tươi is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933331</data>
+      <data key="d6" />
+    </node>
+    <node id="Sao vàng tươi">
+      <data key="d0">Sao vàng tươi</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">Sao vàng tươi is a component used in xơ mướp.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933331</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột tươi">
+      <data key="d0">Bột tươi</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">Bột tươi is a component used in xơ mướp.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933338</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước sôi tươi">
+      <data key="d0">Nước sôi tươi</data>
+      <data key="d1">liquid</data>
+      <data key="d2">Nước sôi tươi is a liquid used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933338</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng gà vỏ trắng luộc chín tươi">
+      <data key="d0">Trứng gà vỏ trắng luộc chín tươi</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng gà vỏ trắng luộc chín tươi is a food item used in traditional medicine.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933345</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa hoàn phụ vỏ trắng tươi">
+      <data key="d0">Hoa hoàn phụ vỏ trắng tươi</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hoa hoàn phụ vỏ trắng tươi is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933345</data>
+      <data key="d6" />
+    </node>
+    <node id="Man kinh tử vỏ trắng tươi">
+      <data key="d0">Man kinh tử vỏ trắng tươi</data>
+      <data key="d1">concept</data>
+      <data key="d2">Man kinh tử vỏ trắng tươi is a concept mentioned as an ingredient in the ỏ tranh recipe.</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933351</data>
+      <data key="d6" />
+    </node>
+    <node id="Thương nhĩ tử vỏ trắng tươi">
+      <data key="d0">Thương nhĩ tử vỏ trắng tươi</data>
+      <data key="d1">concept</data>
+      <data key="d2">Thương nhĩ</data>
+      <data key="d3">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933351</data>
+      <data key="d6" />
+    </node>
+    <node id="Táo Tàu">
+      <data key="d0">Táo Tàu</data>
+      <data key="d1">organization</data>
+      <data key="d2">Táo Tàu is a type of fruit used in traditional medicine.&lt;SEP&gt;Táo tàu là một loại thuốc được sử dụng trong y học cổ truyền để chữa trị các bệnh về đường tiêu hóa.&lt;SEP&gt;Táo Tàu is a type of fruit.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50&lt;SEP&gt;chunk-6cd3fb3c2608d553159445feec34f841&lt;SEP&gt;chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933358</data>
+      <data key="d6" />
+    </node>
+    <node id="Mộc nhĩ đen">
+      <data key="d0">Mộc nhĩ đen</data>
+      <data key="d1">materiamedica</data>
+      <data key="d2">Mộc nhĩ đen is a traditional Chinese medicine ingredient.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933358</data>
+      <data key="d6" />
+    </node>
+    <node id="Nexon Technologies">
+      <data key="d0">Nexon Technologies</data>
+      <data key="d1">organization</data>
+      <data key="d2">Nexon Technologies is a South Korean video game company.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933365</data>
+      <data key="d6" />
+    </node>
+    <node id="Tokyo">
+      <data key="d0">Tokyo</data>
+      <data key="d1">location</data>
+      <data key="d2">Tokyo is the capital city of Japan.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933365</data>
+      <data key="d6" />
+    </node>
+    <node id="World Athletics Championship">
+      <data key="d0">World Athletics Championship</data>
+      <data key="d1">event</data>
+      <data key="d2">The World Athletics Championship is a global sports competition featuring top athletes in track and field.&lt;SEP&gt;The World Athletics Championship is an international track and field competition.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933372</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoa Mào Gà Trắng">
+      <data key="d0">Hoa Mào Gà Trắng</data>
+      <data key="d1">plant</data>
+      <data key="d2">Hoa Mào Gà Trắng is a type of white chicken plum flower used in traditional medicine.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933372</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng Om-lết">
+      <data key="d0">Trứng Om-lết</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng Om-lết is a traditional Chinese dessert made from eggs and sugar.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933379</data>
+      <data key="d6" />
+    </node>
+    <node id="Cuống Lá Sen">
+      <data key="d0">Cuống Lá Sen</data>
+      <data key="d1">plant</data>
+      <data key="d2">Cuong Lá Sen is a type of sen leaf used in traditional medicine.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933379</data>
+      <data key="d6" />
+    </node>
+    <node id="Rau Tế Thải">
+      <data key="d0">Rau Tế Thải</data>
+      <data key="d1">food</data>
+      <data key="d2">Rau Tế Thải is a type of rau tế thải used in traditional Chinese cooking.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933385</data>
+      <data key="d6" />
+    </node>
+    <node id="Đái ra máu">
+      <data key="d0">Đái ra máu</data>
+      <data key="d1">condition</data>
+      <data key="d2">Đái ra máu is a condition characterized by the presence of blood in urine.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933385</data>
+      <data key="d6" />
+    </node>
+    <node id="Cuong Lá Sen">
+      <data key="d0">Cuong Lá Sen</data>
+      <data key="d1">plant</data>
+      <data key="d2">Cuong Lá Sen is a type of sen leaf used in traditional medicine.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933392</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng Om-lét">
+      <data key="d0">Trứng Om-lét</data>
+      <data key="d1">food</data>
+      <data key="d2">Trứng Om-lét is a traditional Chinese dessert made from eggs and sugar.</data>
+      <data key="d3">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933392</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoàng Kỳ">
+      <data key="d0">Hoàng Kỳ</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hoàng Kỳ is a plant used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933398</data>
+      <data key="d6" />
+    </node>
+    <node id="Sắn Dây">
+      <data key="d0">Sắn Dây</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Sắn Dây is a type of root used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933398</data>
+      <data key="d6" />
+    </node>
+    <node id="Lá Sen">
+      <data key="d0">Lá Sen</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Lá Sen is a type of leaf used in traditional medicine.&lt;SEP&gt;Lá sen is a plant used in traditional Vietnamese medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933405</data>
+      <data key="d6" />
+    </node>
+    <node id="Đẳng Sâm">
+      <data key="d0">Đẳng Sâm</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Đẳng Sâm is a type of plant used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933405</data>
+      <data key="d6" />
+    </node>
+    <node id="Cam Thảo">
+      <data key="d0">Cam Thảo</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Cam Thảo is a type of plant used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933411</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Sắn Dây">
+      <data key="d0">Bột Sắn Dây</data>
+      <data key="d1">content</data>
+      <data key="d2">Bột Sắn Dây is the powder extracted from Sắn dây root.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933411</data>
+      <data key="d6" />
+    </node>
+    <node id="Cháo Lá Sen">
+      <data key="d0">Cháo Lá Sen</data>
+      <data key="d1">food</data>
+      <data key="d2">Cháo Lá Sen is a type of traditional medicine made with Lá sen leaf and gạo tẻ.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933419</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Sắn Dây Nấu Cháo">
+      <data key="d0">Bột Sắn Dây Nấu Cháo</data>
+      <data key="d1">food</data>
+      <data key="d2">Bột Sắn Dây Nấu Cháo is a type of traditional medicine made with bột sắn dây, gạo tẻ, và nước.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933419</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoàng Kỳ, Táo Tàu, Gạo">
+      <data key="d0">Hoàng Kỳ, Táo Tàu, Gạo</data>
+      <data key="d1">food</data>
+      <data key="d2">Hoàng Kỳ, Táo Tàu, Gạo is a type of traditional medicine made with Hoàng kỳ, táo tàu, and gạo.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933425</data>
+      <data key="d6" />
+    </node>
+    <node id="Cháo Sơn Dược">
+      <data key="d0">Cháo Sơn Dược</data>
+      <data key="d1">recipe</data>
+      <data key="d2">Cháo Sơn Dược is a type of traditional medicine made with Sơn dược, ý dĩ, mứt hồng, và gạo tẻ.&lt;SEP&gt;Cháo Sơn dược is a recipe using sơn dược as an ingredient.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841&lt;SEP&gt;chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933425</data>
+      <data key="d6" />
+    </node>
+    <node id="Sơn Dược">
+      <data key="d0">Sơn Dược</data>
+      <data key="d1">organization</data>
+      <data key="d2">Sơn Dược is a plant used in traditional medicine.&lt;SEP&gt;Sơn dược is a medicinal herb used in traditional medicine.&lt;SEP&gt;Sơn Dược là một loại thuốc được sử dụng trong y học cổ truyền để chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841&lt;SEP&gt;chunk-5de59a439d43550b85df7da5640d731d&lt;SEP&gt;chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933432</data>
+      <data key="d6" />
+    </node>
+    <node id="Ý Dĩ">
+      <data key="d0">Ý Dĩ</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Ý Dĩ is a type of plant used in traditional medicine.&lt;SEP&gt;Ý dĩ is another medicinal herb used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841&lt;SEP&gt;chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933432</data>
+      <data key="d6" />
+    </node>
+    <node id="Mứt Hồng">
+      <data key="d0">Mứt Hồng</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Mứt Hồng is a type of fruit used in traditional medicine.&lt;SEP&gt;Mứt hồng is a type of medicinal fruit used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841&lt;SEP&gt;chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933438</data>
+      <data key="d6" />
+    </node>
+    <node id="Gạo">
+      <data key="d0">Gạo</data>
+      <data key="d1">food</data>
+      <data key="d2">Gạo is a type of food used in traditional medicine.</data>
+      <data key="d3">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933438</data>
+      <data key="d6" />
+    </node>
+    <node id="huyết">
+      <data key="d0">huyết</data>
+      <data key="d1">concept</data>
+      <data key="d2">Huyết refers to a concept related to health or wellness.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933445</data>
+      <data key="d6" />
+    </node>
+    <node id="ăm hư">
+      <data key="d0">ăm hư</data>
+      <data key="d1">concept</data>
+      <data key="d2">Ăm hư is a term referring to a type of heat or warmth in the body.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933445</data>
+      <data key="d6" />
+    </node>
+    <node id="tăng cường thể lực kéo dài tuổi thọ">
+      <data key="d0">tăng cường thể lực kéo dài tuổi thọ</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tăng cường thể lực kéo dài tuổi thọ refers to an extended lifespan through physical strengthening.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933452</data>
+      <data key="d6" />
+    </node>
+    <node id="Ba Ba">
+      <data key="d0">Ba Ba</data>
+      <data key="d1">recipe</data>
+      <data key="d2">Ba ba refers to a concept related to the balance of yin and yang energies.&lt;SEP&gt;Ba ba recipe is a recipe using ba ba as an ingredient.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933452</data>
+      <data key="d6" />
+    </node>
+    <node id="Bối Mẫu">
+      <data key="d0">Bối Mẫu</data>
+      <data key="d1">concept</data>
+      <data key="d2">Bối mẫu refers to a concept related to spiritual energy or the balance of yin and yang.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933458</data>
+      <data key="d6" />
+    </node>
+    <node id="Tri Mẫu">
+      <data key="d0">Tri Mẫu</data>
+      <data key="d1">concept</data>
+      <data key="d2">Tri mẫu refers to a concept related to the balance of yin and yang energies.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933458</data>
+      <data key="d6" />
+    </node>
+    <node id="Sốt nhẹ do âm hư nóng trong">
+      <data key="d0">Sốt nhẹ do âm hư nóng trong</data>
+      <data key="d1">concept</data>
+      <data key="d2">Sốt nhẹ do âm hư nóng trong medicinal herbs refers to a list of medicinal herbs for treating mild fever caused by heat in the body.&lt;SEP&gt;Sốt nhẹ do âm hư nóng trong treatment refers to a treatment for mild fever caused by heat in the body.&lt;SEP&gt;Sốt nhẹ do âm hư nóng trong refers to a mild fever caused by heat in the body.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933465</data>
+      <data key="d6" />
+    </node>
+    <node id="Bệnh trạng như trên">
+      <data key="d0">Bệnh trạng như trên</data>
+      <data key="d1">concept</data>
+      <data key="d2">Bệnh trạng như trên medicinal herbs refers to a list of medicinal herbs for treating the condition characterized by&lt;SEP&gt;Bệnh trạng như trên treatment refers to a treatment for the condition characterized by heat in the body.&lt;SEP&gt;Bệnh trạng như trên refers to a condition characterized by heat in the body.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933465</data>
+      <data key="d6" />
+    </node>
+    <node id="Yin-yang balance">
+      <data key="d0">Yin-yang balance</data>
+      <data key="d1">concept</data>
+      <data key="d2">Yin-yang balance treatment refers to a treatment for achieving yin-yang balance in spiritual practices.&lt;SEP&gt;Yin-yang balance refers to a state of balance between opposing forces in nature and human life.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933471</data>
+      <data key="d6" />
+    </node>
+    <node id="Sứa Biển">
+      <data key="d0">Sứa Biển</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Sứa biển treatment refers to a treatment for using sứa biển as an ingredient.&lt;SEP&gt;Sứa biển recipe is a recipe using sứa biển as an ingredient.&lt;SEP&gt;Sứa biển refers to a type of seaweed.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933471</data>
+      <data key="d6" />
+    </node>
+    <node id="Thịt Sò Biển">
+      <data key="d0">Thịt Sò Biển</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Thịt sò biển treatment refers to a treatment for using thịt sò biển as an ingredient.&lt;SEP&gt;Thịt sò biển recipe is a recipe using thịt sò biển as an ingredient.&lt;SEP&gt;Thịt sò biển refers to a type of fish.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933478</data>
+      <data key="d6" />
+    </node>
+    <node id="Hải Sâm">
+      <data key="d0">Hải Sâm</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hải sâm treatment refers to a treatment for using hải sâm as an ingredient.&lt;SEP&gt;Hải sâm recipe is a recipe using hải sâm as an ingredient.&lt;SEP&gt;Hải sâm refers to a type of seaweed.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933478</data>
+      <data key="d6" />
+    </node>
+    <node id="Ruột Lợn">
+      <data key="d0">Ruột Lợn</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Ruột lợn treatment refers to a treatment for using ruột lợn as an ingredient.&lt;SEP&gt;Ruột lợn recipe is a recipe using ruột lợn as an ingredient.&lt;SEP&gt;Ruột lợn refers to a type of pig intestine.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933485</data>
+      <data key="d6" />
+    </node>
+    <node id="Tiết Ba Ba">
+      <data key="d0">Tiết Ba Ba</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Tiết ba ba treatment refers to a treatment for using tiết ba ba as an ingredient.&lt;SEP&gt;Tiết ba ba recipe is a recipe using tiết ba ba as an ingredient.&lt;SEP&gt;Tiết ba ba refers to a type of medicinal herb.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933485</data>
+      <data key="d6" />
+    </node>
+    <node id="Bóng Mẫu">
+      <data key="d0">Bóng Mẫu</data>
+      <data key="d1">concept</data>
+      <data key="d2">Bóng mẫu refers to a concept related to spiritual energy or the balance of yin and yang.&lt;SEP&gt;Bóng mẫu treatment refers to a treatment for using bóng mẫu as an ingredient.&lt;SEP&gt;Bóng mẫu recipe is a recipe using bóng mẫu as an ingredient.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933491</data>
+      <data key="d6" />
+    </node>
+    <node id="Trung Nguyên">
+      <data key="d0">Trung Nguyên</data>
+      <data key="d1">concept</data>
+      <data key="d2">Trung nguyên treatment refers to a treatment for using trung nguyên as an ingredient.&lt;SEP&gt;Trung nguyên refers to a concept related to the center or core of something.&lt;SEP&gt;Trung nguyên recipe is a recipe using trung nguyên as an ingredient.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933491</data>
+      <data key="d6" />
+    </node>
+    <node id="Hành Nhân">
+      <data key="d0">Hành Nhân</data>
+      <data key="d1">concept</data>
+      <data key="d2">Hành nhân treatment refers to a treatment for using hành nhân as an ingredient.&lt;SEP&gt;Hành nhân refers to a concept related to the actions or deeds of someone.&lt;SEP&gt;Hành nhân recipe is a recipe using hành nhân as an ingredient.</data>
+      <data key="d3">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933498</data>
+      <data key="d6" />
+    </node>
+    <node id="Xuất Huyết">
+      <data key="d0">Xuất Huyết</data>
+      <data key="d1">concept</data>
+      <data key="d2">Xuất huyết là một tình trạng bệnh lý.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933498</data>
+      <data key="d6" />
+    </node>
+    <node id="Liều Lượng">
+      <data key="d0">Liều Lượng</data>
+      <data key="d1">method</data>
+      <data key="d2">3-5 con ấu trùng ong, một ít đường trắng</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933504</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước">
+      <data key="d0">Nước</data>
+      <data key="d1">data</data>
+      <data key="d2">Nước là một chất lỏng cơ bản.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933504</data>
+      <data key="d6" />
+    </node>
+    <node id="Cá Mực">
+      <data key="d0">Cá Mực</data>
+      <data key="d1">artifact</data>
+      <data key="d2">Cá mực là một loại động vật biển.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933511</data>
+      <data key="d6" />
+    </node>
+    <node id="Bạch Cập">
+      <data key="d0">Bạch Cập</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Bạch cập is a plant used in traditional Vietnamese medicine.&lt;SEP&gt;Bạch cập là một loại đá quý.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933511</data>
+      <data key="d6" />
+    </node>
+    <node id="Bao Trứng Bọ Ngựa">
+      <data key="d0">Bao Trứng Bọ Ngựa</data>
+      <data key="d1">content</data>
+      <data key="d2">Bao trứng bọ ngựa là một loại thuốc cổ truyền.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933518</data>
+      <data key="d6" />
+    </node>
+    <node id="Cá Nheo Hấp Xôi">
+      <data key="d0">Cá Nheo Hấp Xôi</data>
+      <data key="d1">food</data>
+      <data key="d2">Cá nheo hấp xôi là một món ăn dân dã.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933518</data>
+      <data key="d6" />
+    </node>
+    <node id="Lá Hẹ">
+      <data key="d0">Lá Hẹ</data>
+      <data key="d1">content</data>
+      <data key="d2">Lá hẹ là một loại thảo mộc.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933525</data>
+      <data key="d6" />
+    </node>
+    <node id="Cá Nheo Hầm">
+      <data key="d0">Cá Nheo Hầm</data>
+      <data key="d1">food</data>
+      <data key="d2">Cá nheo hầm là một món ăn gia đình.</data>
+      <data key="d3">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933525</data>
+      <data key="d6" />
+    </node>
+    <node id="Muối">
+      <data key="d0">Muối</data>
+      <data key="d1">substance</data>
+      <data key="d2">Muối là một chất có tác dụng làm mát và thanh nhiệt.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933532</data>
+      <data key="d6" />
+    </node>
+    <node id="Tổ Ong">
+      <data key="d0">Tổ Ong</data>
+      <data key="d1">organization</data>
+      <data key="d2">Tổ ong là một tổ ong được sử dụng trong y học cổ truyền để chữa trị các bệnh về đường hô hấp và tiêu hóa.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933532</data>
+      <data key="d6" />
+    </node>
+    <node id="Tam Thất">
+      <data key="d0">Tam Thất</data>
+      <data key="d1">organization</data>
+      <data key="d2">Tam thất is a type of Chinese herb used in traditional medicine.&lt;SEP&gt;Tam Thất is a character in a traditional Vietnamese medicine text.&lt;SEP&gt;Tam Thất is a traditional Vietnamese medicine company.&lt;SEP&gt;Tam Thất là một loại thảo mộc được sử dụng trong y học cổ truyền để chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd&lt;SEP&gt;chunk-10de4c00d7523830026190591d1d12e5&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933538</data>
+      <data key="d6" />
+    </node>
+    <node id="Long Nhãn">
+      <data key="d0">Long Nhãn</data>
+      <data key="d1">organization</data>
+      <data key="d2">Long nhãn là một loại thuốc được sử dụng trong y học cổ truyền để chữa trị các bệnh về đường tiêu hóa và hô hấp.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933538</data>
+      <data key="d6" />
+    </node>
+    <node id="Gừng Nướng">
+      <data key="d0">Gừng Nướng</data>
+      <data key="d1">organization</data>
+      <data key="d2">Gừng nướng là một loại thảo mộc được sử dụng trong y học cổ truyền để chữa trị các bệnh về đường tiêu hóa và hô hấp.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933544</data>
+      <data key="d6" />
+    </node>
+    <node id="Viêm Mũi">
+      <data key="d0">Viêm Mũi</data>
+      <data key="d1">organization</data>
+      <data key="d2">Viêm mũi là một tình trạng nhiễm trùng trong đường hô hấp trên.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933544</data>
+      <data key="d6" />
+    </node>
+    <node id="Thị Năng">
+      <data key="d0">Thị Năng</data>
+      <data key="d1">organization</data>
+      <data key="d2">Thị Năng là một loại thuốc được sử dụng trong y học cổ truyền để chữa trị các bệnh về đường hô hấp.&lt;SEP&gt;Thị năng là một loại thuốc được sử dụng trong y học cổ truyền để chữa trị các bệnh về đường hô hấp.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933551</data>
+      <data key="d6" />
+    </node>
+    <node id="Tỳ Vị Hư Hàn">
+      <data key="d0">Tỳ Vị Hư Hàn</data>
+      <data key="d1">organization</data>
+      <data key="d2">Tỳ vị hư hàn là một tình trạng hư hàn trong tỳ vị, dẫn đến ỉa ra máu và các triệu chứng khác.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933551</data>
+      <data key="d6" />
+    </node>
+    <node id="Hư Hàn">
+      <data key="d0">Hư Hàn</data>
+      <data key="d1">organization</data>
+      <data key="d2">Hư hàn là một tình trạng hư hàn trong cơ thể, dẫn đến các triệu chứng khác nhau.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933557</data>
+      <data key="d6" />
+    </node>
+    <node id="Thấp Nhiệt">
+      <data key="d0">Thấp Nhiệt</data>
+      <data key="d1">organization</data>
+      <data key="d2">Thấp nhiệt là một tình trạng thấp nhiệt trong cơ thể, dẫn đến các triệu chứng khác nhau.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933557</data>
+      <data key="d6" />
+    </node>
+    <node id="Đại Tràng">
+      <data key="d0">Đại Tràng</data>
+      <data key="d1">organization</data>
+      <data key="d2">Đại tràng là một tình trạng đại tràng trong cơ thể, dẫn đến các triệu chứng khác nhau.</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933564</data>
+      <data key="d6" />
+    </node>
+    <node id="Vịt Hấp Cách Thủy">
+      <data key="d0">Vịt Hấp Cách Thủy</data>
+      <data key="d1">animal</data>
+      <data key="d2">Vịt hấp cách thủy is a Vietnamese dish made with boiled duck.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933564</data>
+      <data key="d6" />
+    </node>
+    <node id="Lao Phổi">
+      <data key="d0">Lao Phổi</data>
+      <data key="d1">concept</data>
+      <data key="d2">Lao phổi refers to the concept of "cooling the lungs" in traditional Chinese medicine.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933571</data>
+      <data key="d6" />
+    </node>
+    <node id="Ho Trong Đờm Có Máu">
+      <data key="d0">Ho Trong Đờm Có Máu</data>
+      <data key="d1">condition</data>
+      <data key="d2">Ho trong đờm có máu is a medical condition characterized by coughing up blood.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933571</data>
+      <data key="d6" />
+    </node>
+    <node id="Sa Sâm">
+      <data key="d0">Sa Sâm</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Sa sâm is a type of Chinese herb used in traditional medicine.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933578</data>
+      <data key="d6" />
+    </node>
+    <node id="Thịt Rùa">
+      <data key="d0">Thịt Rùa</data>
+      <data key="d1">animal</data>
+      <data key="d2">Thịt rùa is the meat of a duck, often used in Vietnamese cuisine.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933578</data>
+      <data key="d6" />
+    </node>
+    <node id="Trứng Gà">
+      <data key="d0">Trứng Gà</data>
+      <data key="d1">animal</data>
+      <data key="d2">Trứng gà is a type of chicken egg.&lt;SEP&gt;Egg is a food item used in the recipe.&lt;SEP&gt;Trứng gà is a type of egg used in traditional medicine.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5&lt;SEP&gt;chunk-6786afbfb4d548114c919a0fb33dd3ef&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933585</data>
+      <data key="d6" />
+    </node>
+    <node id="Hoàng Tinh">
+      <data key="d0">Hoàng Tinh</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Hoàng tinh is a type of Chinese herb used in traditional medicine.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933585</data>
+      <data key="d6" />
+    </node>
+    <node id="Vietnamese Medicine">
+      <data key="d0">Vietnamese Medicine</data>
+      <data key="d1">concept</data>
+      <data key="d2">Vietnamese medicine refers to traditional Chinese medicine used in Vietnam.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933591</data>
+      <data key="d6" />
+    </node>
+    <node id="Chinese Herb">
+      <data key="d0">Chinese Herb</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Chinese herbs are plants or plant extracts used in traditional Chinese medicine.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933591</data>
+      <data key="d6" />
+    </node>
+    <node id="Traditional Vietnamese Cuisine">
+      <data key="d0">Traditional Vietnamese Cuisine</data>
+      <data key="d1">food</data>
+      <data key="d2">Traditional Vietnamese cuisine includes dishes like vịt hấp cách thủy.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933598</data>
+      <data key="d6" />
+    </node>
+    <node id="Vietnamese Dish">
+      <data key="d0">Vietnamese Dish</data>
+      <data key="d1">food</data>
+      <data key="d2">Vietnamese dish refers to a type of food originating from Vietnam, such as vịt hấp cách thủy.</data>
+      <data key="d3">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933598</data>
+      <data key="d6" />
+    </node>
+    <node id="Lao Phổi Ho">
+      <data key="d0">Lao Phổi Ho</data>
+      <data key="d1">concept</data>
+      <data key="d2">Lao phổi ho refers to a traditional Vietnamese medical condition.</data>
+      <data key="d3">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933605</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Tam Thất">
+      <data key="d0">Bột Tam Thất</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">Bột tam thất is an ingredient used in the recipe.</data>
+      <data key="d3">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933605</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước Ngó Sen">
+      <data key="d0">Nước Ngó Sen</data>
+      <data key="d1">liquid</data>
+      <data key="d2">Nước ngó sen is a liquid used in the recipe.</data>
+      <data key="d3">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933612</data>
+      <data key="d6" />
+    </node>
+    <node id="Tổ Yến">
+      <data key="d0">Tổ Yến</data>
+      <data key="d1">ingredient</data>
+      <data key="d2">Tổ yến is an ingredient used in the recipe.</data>
+      <data key="d3">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933612</data>
+      <data key="d6" />
+    </node>
+    <node id="Trắc Bách Diệp">
+      <data key="d0">Trắc Bách Diệp</data>
+      <data key="d1">plant</data>
+      <data key="d2">Trắc bách diệp is a plant used in traditional Vietnamese medicine.</data>
+      <data key="d3">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933619</data>
+      <data key="d6" />
+    </node>
+    <node id="Bánh Bột Nếp">
+      <data key="d0">Bánh Bột Nếp</data>
+      <data key="d1">content</data>
+      <data key="d2">Bánh bột nếp is a type of rice cake used in traditional medicine.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933619</data>
+      <data key="d6" />
+    </node>
+    <node id="Mật Ong">
+      <data key="d0">Mật Ong</data>
+      <data key="d1">content</data>
+      <data key="d2">Mật ong is a type of honey used in traditional medicine.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933626</data>
+      <data key="d6" />
+    </node>
+    <node id="Canh Cải Hoa Vàng và Rễ Cỏ Tranh">
+      <data key="d0">Canh Cải Hoa Vàng và Rễ Cỏ Tranh</data>
+      <data key="d1">content</data>
+      <data key="d2">Canh cải hoa vàng và rễ cỏ tranh is a type of herbal soup used in traditional medicine.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933626</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước Củ Cải">
+      <data key="d0">Nước Củ Cải</data>
+      <data key="d1">content</data>
+      <data key="d2">Nước củ cải is a type of herbal tea used in traditional medicine.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933633</data>
+      <data key="d6" />
+    </node>
+    <node id="Cruz">
+      <data key="d0">Cruz</data>
+      <data key="d1">person</data>
+      <data key="d2">Cruz is a character mentioned as having a vision of control and order.&lt;SEP&gt;Cruz is a character who has a vision of control and order.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933633</data>
+      <data key="d6" />
+    </node>
+    <node id="Jordan">
+      <data key="d0">Jordan</data>
+      <data key="d1">person</data>
+      <data key="d2">Jordan is a character who shares a commitment to discovery with Alex.&lt;SEP&gt;Jordan is a character who</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933639</data>
+      <data key="d6" />
+    </node>
+    <node id="Taylor">
+      <data key="d0">Taylor</data>
+      <data key="d1">person</data>
+      <data key="d2">Taylor is a character who shows reverence towards the device and has a moment of respect for Jordan.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933639</data>
+      <data key="d6" />
+    </node>
+    <node id="Alex">
+      <data key="d0">Alex</data>
+      <data key="d1">person</data>
+      <data key="d2">Alex is a character who observes Taylor's authoritarian behavior and notes changes in Taylor's attitude towards the device.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933646</data>
+      <data key="d6" />
+    </node>
+    <node id="The Device">
+      <data key="d0">The Device</data>
+      <data key="d1">content</data>
+      <data key="d2">The Device is a central component of the story, with potential game-changing implications.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933646</data>
+      <data key="d6" />
+    </node>
+    <node id="Noah Carter">
+      <data key="d0">Noah Carter</data>
+      <data key="d1">person</data>
+      <data key="d2">Noah Carter is a sprinter who broke the 100m sprint record using cutting-edge carbon-fiber spikes.</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933652</data>
+      <data key="d6" />
+    </node>
+    <node id="Bí Đao">
+      <data key="d0">Bí Đao</data>
+      <data key="d1">naturalobject</data>
+      <data key="d2">Bí đao is a type of fruit.</data>
+      <data key="d3">chunk-a0b30e7ee3690573abc06fc6d88be01e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933652</data>
+      <data key="d6" />
+    </node>
+    <node id="Sốt cao">
+      <data key="d0">Sốt cao</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d2">Feeling feverish and fearful.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933682</data>
+      <data key="d6" />
+    </node>
+    <node id="sợ gió">
+      <data key="d0">sợ gió</data>
+      <data key="d3">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d2">Feeling feverish and fearful.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933689</data>
+      <data key="d6" />
+    </node>
+    <node id="Canh Đậu Phụ, Thạch Cao">
+      <data key="d0">Canh Đậu Phụ, Thạch Cao</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d2">Thạch cao sống 500g, đậu phụ 200g. Cho vào 500ml nước, quấy đều, đun sôi trong 1 tiếng. Cho ít muối vào. Ăn đậu phụ, uống nước canh.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933715</data>
+      <data key="d6" />
+    </node>
+    <node id="Nước Củ Cải, Đường Phèn">
+      <data key="d0">Nước Củ Cải, Đường Phèn</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d2">Củ cải trắng rửa sạch, ép ra nước, cho đường phèn vừa đủ, quấy đều. Mỗi lần uống 100ml. Mỗi ngày uống 3 lần.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933721</data>
+      <data key="d6" />
+    </node>
+    <node id="Bì Lợn, Táo Tàu">
+      <data key="d0">Bì Lợn, Táo Tàu</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d2">Lấy 500g bì lợn tươi, nước vừa đủ, nấu thành canh, cho vào 250g táo. Đun nhỏ lửa. Khi bì lợn chín nhừ, cho vào ít đường. Mỗi ngày ăn 1 lần.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933728</data>
+      <data key="d6" />
+    </node>
+    <node id="Ngó Sen, Táo Tàu, Cây Tế Thải">
+      <data key="d0">Ngó Sen, Táo Tàu, Cây Tế Thải</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d2">Rau tế thải tươi 60g, ngó sen tươi 20g, táo 5 quả. Cho vào 2 bát nước sắc lấy 1 bát. Ăn táo uống nước; Mỗi ngày 2 lần.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933734</data>
+      <data key="d6" />
+    </node>
+    <node id="Ấu Trùng Ong, Đường Trắng">
+      <data key="d0">Ấu Trùng Ong, Đường Trắng</data>
+      <data key="d3">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d2">Dùng 3-5 con ấu trùng ong, một ít đường trắng. Ấu trùng chấm đường ăn. Ăn 1-2 lần sẽ khỏi</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933741</data>
+      <data key="d6" />
+    </node>
+    <node id="mộc nhĩ">
+      <data key="d0">mộc nhĩ</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">âm is used as an ingredient in traditional medicine.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933741</data>
+      <data key="d6" />
+    </node>
+    <node id="âm">
+      <data key="d0">âm</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">âm is used as an ingredient in traditional medicine.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933749</data>
+      <data key="d6" />
+    </node>
+    <node id="thái nhỏ">
+      <data key="d0">thái nhỏ</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">thái nhỏ is also used as an ingredient in traditional medicine.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933758</data>
+      <data key="d6" />
+    </node>
+    <node id="cây thanh hao">
+      <data key="d0">cây thanh hao</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">cây thanh hao is used to treat sore throat and fever.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933758</data>
+      <data key="d6" />
+    </node>
+    <node id="sốt rét">
+      <data key="d0">sốt rét</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">cây thanh hao is used to treat sore throat and fever.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933765</data>
+      <data key="d6" />
+    </node>
+    <node id="bột cây huệ">
+      <data key="d0">bột cây huệ</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">bột cây huệ is used to treat coughs and colds.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933772</data>
+      <data key="d6" />
+    </node>
+    <node id="ho ra máu">
+      <data key="d0">ho ra máu</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">bột cây huệ is used to treat coughs and colds.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933778</data>
+      <data key="d6" />
+    </node>
+    <node id="mộc nhĩ trắng">
+      <data key="d0">mộc nhĩ trắng</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">mộc nhĩ trắng is used to treat ho ra máu.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933785</data>
+      <data key="d6" />
+    </node>
+    <node id="rễ cỏ tranh">
+      <data key="d0">rễ cỏ tranh</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">rễ cỏ tranh is used to treat sore throat and fever.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933791</data>
+      <data key="d6" />
+    </node>
+    <node id="ngó sen">
+      <data key="d0">ngó sen</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">ngó sen is used to treat sore throat and fever.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933797</data>
+      <data key="d6" />
+    </node>
+    <node id="Bốc Nhiệt">
+      <data key="d0">Bốc Nhiệt</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Tiết Ba Ba Hòa Rượu is used to treat bốc nhiệt.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933797</data>
+      <data key="d6" />
+    </node>
+    <node id="Tiết Ba Ba Hòa Rượu">
+      <data key="d0">Tiết Ba Ba Hòa Rượu</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Tiết Ba Ba Hòa Rượu is used to treat bốc nhiệt.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933804</data>
+      <data key="d6" />
+    </node>
+    <node id="Cây Thanh Hao Ngâm Rượu">
+      <data key="d0">Cây Thanh Hao Ngâm Rượu</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Cây Thanh Hao is used to treat sore throat and fever.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933810</data>
+      <data key="d6" />
+    </node>
+    <node id="Sốt Rét">
+      <data key="d0">Sốt Rét</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Cây Thanh Hao is used to treat sore throat and fever.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933817</data>
+      <data key="d6" />
+    </node>
+    <node id="Bột Cây Huệ Khô Nấu Cháo">
+      <data key="d0">Bột Cây Huệ Khô Nấu Cháo</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Bột Cây Huệ is used to treat coughs and colds.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933817</data>
+      <data key="d6" />
+    </node>
+    <node id="Ho Ra Máu">
+      <data key="d0">Ho Ra Máu</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Bột Cây Huệ is used to treat coughs and colds.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933823</data>
+      <data key="d6" />
+    </node>
+    <node id="Mộc Nhĩ Trắng">
+      <data key="d0">Mộc Nhĩ Trắng</data>
+      <data key="d3">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d2">Mộc Nhĩ is used to treat ho ra máu.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762933833</data>
+      <data key="d6" />
+    </node>
+    <node id="ỉa Ra Máu Do Tỳ Vị Hư Hàn">
+      <data key="d0">ỉa Ra Máu Do Tỳ Vị Hư Hàn</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d2">Sơn dược được sử dụng để chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762934203</data>
+      <data key="d6" />
+    </node>
+    <node id="ỉa Ra Máu Do Thấp Nhiệt">
+      <data key="d0">ỉa Ra Máu Do Thấp Nhiệt</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d2">Gừng nướng được sử dụng để chữa trị ỉa ra máu do thấp nhiệt.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762934213</data>
+      <data key="d6" />
+    </node>
+    <node id="Bổ TỶ,">
+      <data key="d0">Bổ TỶ,</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d2">Gạo tẻ được sử dụng để bổ tỳ.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762934222</data>
+      <data key="d6" />
+    </node>
+    <node id="N/A,">
+      <data key="d0">N/A,</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d2">Gừng nướng không có mối quan hệ trực tiếp nào với các khía cạnh khác của bài thuốc.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762934235</data>
+      <data key="d6" />
+    </node>
+    <node id="Mộc Nhĩ Đen">
+      <data key="d0">Mộc Nhĩ Đen</data>
+      <data key="d3">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d2">Mộc nhĩ đen được sử dụng để bổ tỳ.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762934241</data>
+      <data key="d6" />
+    </node>
+    <node id="Bánh Bột Nép">
+      <data key="d0">Bánh Bột Nép</data>
+      <data key="d3">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d2">Ngó sen is used in bánh bột nếp products.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1762934402</data>
+      <data key="d6" />
+    </node>
+    <edge source="Gạo Tẻ" target="Mộc Nhĩ">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ và gạo tẻ được sử dụng cùng nhau để tạo ra cháo chữa trị ỉa ra máu do tỳ vị hư hàn và thấp nhiệt.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934196</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Gạo Tẻ" target="Bổ TỶ,">
+      <data key="d7">1.0</data>
+      <data key="d8">Gạo tẻ được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934229</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Gạo Tẻ" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">Gạo tẻ is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934388</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đường Phèn" target="Hoàng Tinh">
+      <data key="d7">1.0</data>
+      <data key="d8">Hoàng tinh and đường phèn are both used as sweeteners in traditional Vietnamese medicine.</data>
+      <data key="d9">sweetener,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934319</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đường Phèn" target="Tam Thất">
+      <data key="d7">2.0</data>
+      <data key="d8">Tam thất and đường phèn are both used as sweeteners in traditional Chinese medicine.</data>
+      <data key="d9">sweetener,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934337</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đường Phèn" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">Sugar is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934395</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đường Phèn" target="Nước Củ Cải">
+      <data key="d7">5.0</data>
+      <data key="d8">Đường phèn is an ingredient in nước củ cải products.</data>
+      <data key="d9">food component,ingredient</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934415</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ao" target="thịt lợn nạc">
+      <data key="d7">1.0</data>
+      <data key="d8">The ao fruit is paired with thinly sliced pork for culinary purposes.</data>
+      <data key="d9">ingredient pairing</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933659</data>
+      <data key="d13" />
+    </edge>
+    <edge source="nhừ" target="muối ăn">
+      <data key="d7">1.0</data>
+      <data key="d8">The nhừ seafood is cooked with salt for seasoning.</data>
+      <data key="d9">cooking ingredient</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933659</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Con Trai Biển" target="Câu Đằng">
+      <data key="d7">1.0</data>
+      <data key="d8">Bột con trai biển and câu đằng are traditional remedies used together to treat fever and chills.</data>
+      <data key="d9">traditional remedy pairing</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933666</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Mật Gấu" target="Nước Mía">
+      <data key="d7">1.0</data>
+      <data key="d8">The mật gấu is paired with mía sugar cane juice as a sweetener.</data>
+      <data key="d9">ingredient pairing</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933666</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Giun Đất" target="Đường Trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">The giun đất is cooked with sugar for sweetening purposes.</data>
+      <data key="d9">cooking ingredient</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933672</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đường Trắng" target="Nước">
+      <data key="d7">1.0</data>
+      <data key="d8">đường trắng là một chất phụ gia phổ biến.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934137</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đường Trắng" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">White sugar is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934371</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Sừng Sơn Dương" target="Nước Sơn Dược">
+      <data key="d7">1.0</data>
+      <data key="d8">Bột sừng sơn dương and nước sơn dược are traditional remedies used together to treat fever and chills.</data>
+      <data key="d9">traditional remedy pairing</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933672</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nước Sơn Dược" target="Cháo Gạo">
+      <data key="d7">1.0</data>
+      <data key="d8">The nước sơn dược is used as an ingredient in the preparation of cháo gạo rice porridge.</data>
+      <data key="d9">food preparation method</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933679</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nước Mía" target="Cháo Gạo">
+      <data key="d7">1.0</data>
+      <data key="d8">The mía sugar cane juice is paired with cháo gạo rice porridge for sweetening purposes.</data>
+      <data key="d9">sweetener pairing</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933682</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nước Mía" target="Rễ Cỏ Tranh">
+      <data key="d7">1.0</data>
+      <data key="d8">Rễ cỏ tranh và nước mía là các nguyên liệu chính trong công thức này.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934176</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nước Mía" target="Cá Nheo Hầm">
+      <data key="d7">14.0</data>
+      <data key="d8">Nước mía là một nguyên liệu chính trong công thức món ăn này.&lt;SEP&gt;Nước mía có tác dụng làm dịu loạn cho cá nheo hầm.&lt;SEP&gt;Nước mía có tác dụng thanh nhiệt cho cá nheo hầm.&lt;SEP&gt;Nước mía có tác dụng giảm đau cho cá nheo hầm.&lt;SEP&gt;Nước mía có tác dụng cầm máu cho cá nheo hầm.&lt;SEP&gt;Nước mía có tác dụng làm mát cho cá nheo hầm.</data>
+      <data key="d9">ingredient,treatment effect</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934180</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Rễ Cỏ Tranh">
+      <data key="d7">1.0</data>
+      <data key="d8">Rễ cỏ tranh và ngó sen được sử dụng cùng nhau trong y học truyền thống.</data>
+      <data key="d9">NaturalObject association,ingredient</data>
+      <data key="d10">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933689</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Ho Ra Máu">
+      <data key="d7">1.0</data>
+      <data key="d8">Ngó Sen is used to treat sore throat and fever.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933843</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Xuất Huyết">
+      <data key="d7">1.0</data>
+      <data key="d8">Thanh nhiệt, điều hòa máu, cầm máu</data>
+      <data key="d9">treatment effect</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934145</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Lá Hẹ">
+      <data key="d7">1.0</data>
+      <data key="d8">Ngó sen và lá hẹ là các loại thảo mộc.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934152</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Tam Thất">
+      <data key="d7">2.0</data>
+      <data key="d8">Tam thất and ngó sen are both used in traditional Chinese medicine.&lt;SEP&gt;Ngó sen is used in Tam Thất's traditional medicine products.</data>
+      <data key="d9">herbal remedy,medicinal ingredient,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934326</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Sa Sâm">
+      <data key="d7">1.0</data>
+      <data key="d8">Sa sâm and ngó sen are both used in traditional Chinese medicine.</data>
+      <data key="d9">herbal remedy,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934333</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Hoàng Tinh">
+      <data key="d7">12.0</data>
+      <data key="d8">Hoàng tinh and ngó sen are both used in traditional Chinese medicine.</data>
+      <data key="d9">herbal remedy,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934337</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Đông Trùng Hạ Thảo">
+      <data key="d7">2.0</data>
+      <data key="d8">Đông trùng hạ thảo and ngó sen are both used in traditional Chinese medicine.</data>
+      <data key="d9">herbal remedy,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934355</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">Ngó sen is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934361</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Bánh Bột Nép">
+      <data key="d7">1.0</data>
+      <data key="d8">Ngó sen is used in bánh bột nếp products.</data>
+      <data key="d9">food component,medicinal ingredient</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934408</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Mật Ong">
+      <data key="d7">1.0</data>
+      <data key="d8">Ngó sen and mật ong are both used in traditional medicine products.</data>
+      <data key="d9">food component,medicinal ingredient</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934412</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ngó Sen" target="Canh Cải Hoa Vàng và Rễ Cỏ Tranh">
+      <data key="d7">1.0</data>
+      <data key="d8">Ngó sen is an ingredient in canh cải hoa vàng và rễ cỏ tranh products.</data>
+      <data key="d9">food component,medicinal ingredient</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934415</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Sơn Dược" target="Phổi Lợn">
+      <data key="d7">1.0</data>
+      <data key="d8">Bột sơn dược được thêm vào nước thuốc sắc để điều trị bệnh lao phổi.</data>
+      <data key="d9">Material association,ingredient</data>
+      <data key="d10">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933696</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Sơn Dược" target="Đông Trùng Hạ Thảo">
+      <data key="d7">2.0</data>
+      <data key="d8">Đông trùng hạ thảo được thêm vào nước thuốc sắc để tăng cường hiệu quả điều trị.&lt;SEP&gt;Bột sơn dược được thêm vào nước thuốc sắc để tăng cường hiệu quả điều trị.</data>
+      <data key="d9">Material association,ingredient</data>
+      <data key="d10">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933708</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hạnh Nhân" target="Vỏ Rễ Dâu">
+      <data key="d7">1.0</data>
+      <data key="d8">Hạnh nhân và vỏ rễ dâu được sử dụng cùng nhau trong y học truyền thống.</data>
+      <data key="d9">NaturalObject association,ingredient</data>
+      <data key="d10">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933702</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Rễ Cỏ Tranh" target="Ho Ra Máu">
+      <data key="d7">1.0</data>
+      <data key="d8">Rễ Cỏ Tranh is used to treat sore throat and fever.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933840</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Rễ Cỏ Tranh" target="Cá Nheo Hầm">
+      <data key="d7">14.0</data>
+      <data key="d8">Cá Nheo Hầm và Rễ Cỏ Tranh
+
+Cá nheo hầm là một món ăn truyền thống trong y học cổ truyền Việt Nam, được kết hợp với rễ cỏ tranh để tạo ra một món ăn bổ dưỡng. Rễ cỏ tranh có nhiều tác dụng đối với sức khỏe của cá nheo hầm.
+
+Rễ cỏ tranh được sử dụng để điều trị nhiều bệnh lý khác nhau cho cá nheo hầm, bao gồm bệnh tiêu hóa, tim mạch, tăng cường miễn dịch, thận, gan, chống ung thư, điều hòa máu, chống viêm và chữa bệnh. Các tác dụng của rễ cỏ tranh đối với cá nheo hầm được ghi nhận là rất đa dạng và phong phú.
+
+Tuy nhiên, cần lưu ý rằng các tác dụng của rễ cỏ tranh đối với cá nheo hầm có thể khác nhau tùy thuộc vào từng trường hợp cụ thể. Do đó, việc sử dụng rễ cỏ tranh trong y học cổ truyền Việt Nam nên được thực hiện dưới sự hướng dẫn của chuyên gia y tế để đảm bảo an toàn và hiệu quả.
+
+Tổng quan, rễ cỏ tranh là một thành phần quan trọng trong món ăn cá nheo hầm, cung cấp nhiều lợi ích cho sức khỏe của cá nheo hầm.</data>
+      <data key="d9">ingredient,treatment effect</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934172</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bạng Lan Hoa" target="Thịt Lợn Nạc">
+      <data key="d7">1.0</data>
+      <data key="d8">Bạng lan hoa và thịt lợn nạc được sử dụng cùng nhau trong y học truyền thống.</data>
+      <data key="d9">Food association,ingredient</data>
+      <data key="d10">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933702</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoài Sơn" target="Mộc Nhĩ">
+      <data key="d7">1.0</data>
+      <data key="d8">Hoài sơn và mộc nhĩ được sử dụng cùng nhau trong y học truyền thống.</data>
+      <data key="d9">NaturalObject association,ingredient</data>
+      <data key="d10">chunk-a0e6aa1c623dfe9242bfa74aa2f5492f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933708</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Mộc Nhĩ" target="Ba Ba">
+      <data key="d7">2.0</data>
+      <data key="d8">Ba ba recipe and mộc nhĩ are used together to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934090</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Mộc Nhĩ" target="Cháo Sơn Dược">
+      <data key="d7">3.0</data>
+      <data key="d8">Mộc nhĩ recipe is used in cháo sơn dược recipes to treat barking dogs.&lt;SEP&gt;Mộc nhĩ is used in cháo sơn dược recipes to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934117</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Mộc Nhĩ" target="Bổ TỶ,">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934232</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Mộc Nhĩ" target="Hư Hàn">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ được sử dụng để chữa trị hư hàn.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934258</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Mộc Nhĩ" target="Đông Trùng Hạ Thảo">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ and đông trùng hạ thảo are both used in traditional Vietnamese medicine.</data>
+      <data key="d9">herbal remedy,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934306</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đông Trùng Hạ Thảo" target="Sa Sâm">
+      <data key="d7">1.0</data>
+      <data key="d8">Đông trùng hạ thảo and sa sâm are both used in traditional Vietnamese medicine.</data>
+      <data key="d9">food pairing,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934344</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đông Trùng Hạ Thảo" target="Tam Thất">
+      <data key="d7">12.0</data>
+      <data key="d8">Đông trùng hạ thảo and tam thất are both used in traditional Chinese medicine.</data>
+      <data key="d9">herbal remedy,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934347</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đông Trùng Hạ Thảo" target="Hoàng Tinh">
+      <data key="d7">12.0</data>
+      <data key="d8">Đông trùng hạ thảo and hoàng tinh are both used as sweeteners in traditional Vietnamese medicine.</data>
+      <data key="d9">sweetener,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934351</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Công hiệu" target="ỏ tranh">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh is said to have a specific effect on the body, cooling the blood and stopping bleeding.</data>
+      <data key="d9">effect</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933851</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Công hiệu" target="Mát máu">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh is believed to cool the blood and stop bleeding, which is part of its effect on the body.</data>
+      <data key="d9">effect</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933857</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Công hiệu" target="Cầm máu">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh is thought to constrict blood vessels and prevent excessive bleeding, which is also part of its effect on the body.</data>
+      <data key="d9">effect</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933864</data>
+      <data key="d13" />
+    </edge>
+    <edge source="BÀI THUỐC" target="Canh Đậu Phụ, Thạch Cao">
+      <data key="d7">6.0</data>
+      <data key="d8">Thạch cao sống 500g, đậu phụ 200g. Cho vào 500ml nước, quấy đều, đun sôi trong 1 tiếng. Cho ít muối vào. Ăn đậu phụ, uống nước canh.</data>
+      <data key="d9">Liều lượng</data>
+      <data key="d10">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933718</data>
+      <data key="d13" />
+    </edge>
+    <edge source="BÀI THUỐC" target="Nước Củ Cải, Đường Phèn">
+      <data key="d7">5.0</data>
+      <data key="d8">Củ cải trắng rửa sạch, ép ra nước, cho đường phèn vừa đủ, quấy đều. Mỗi lần uống 100ml. Mỗi ngày uống 3 lần.</data>
+      <data key="d9">Liều lượng</data>
+      <data key="d10">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933725</data>
+      <data key="d13" />
+    </edge>
+    <edge source="BÀI THUỐC" target="Bì Lợn, Táo Tàu">
+      <data key="d7">5.0</data>
+      <data key="d8">Lấy 500g bì lợn tươi, nước vừa đủ, nấu thành canh, cho vào 250g táo. Đun nhỏ lửa. Khi bì lợn chín nhừ, cho vào ít đường. Mỗi ngày ăn 1 lần.</data>
+      <data key="d9">Liều lượng</data>
+      <data key="d10">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933731</data>
+      <data key="d13" />
+    </edge>
+    <edge source="BÀI THUỐC" target="Ngó Sen, Táo Tàu, Cây Tế Thải">
+      <data key="d7">5.0</data>
+      <data key="d8">Rau tế thải tươi 60g, ngó sen tươi 20g, táo 5 quả. Cho vào 2 bát nước sắc lấy 1 bát. Ăn táo uống nước; Mỗi ngày 2 lần.</data>
+      <data key="d9">Liều lượng</data>
+      <data key="d10">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933738</data>
+      <data key="d13" />
+    </edge>
+    <edge source="BÀI THUỐC" target="Ấu Trùng Ong, Đường Trắng">
+      <data key="d7">4.0</data>
+      <data key="d8">Dùng 3-5 con ấu trùng ong, một ít đường trắng. Ấu trùng chấm đường ăn. Ăn 1-2 lần sẽ khỏi</data>
+      <data key="d9">Liều lượng</data>
+      <data key="d10">chunk-5e2a5e140ee874372337a5a651a0bab0</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933749</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Nước uống">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh is used in traditional medicine as a liquid ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933843</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Trung Quốc">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh is used in traditional medicine as an ingredient from Trung Quốc.</data>
+      <data key="d9">ingredient,location</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933864</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Việt Nam">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh might be used in traditional medicine from Việt Nam.</data>
+      <data key="d9">ingredient,location</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933870</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hoa kim ngân">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hoa kim ngân as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933873</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hoa hoàn phụ">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hoa hoàn phụ as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933877</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hoa tân di">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hoa tân di as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933880</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Trương Nhĩ Tử">
+      <data key="d7">3.0</data>
+      <data key="d8">The ỏ tranh recipe includes ingredients and concepts associated with Trương Nhĩ Tử.</data>
+      <data key="d9">concept,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933883</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Man kinh tử">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes man kinh tử as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933886</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Thương nhĩ tử">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes thương nhĩ tử as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933890</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Cỏ phượng vĩ">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes cỏ phượng vĩ as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933893</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hải đới">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hải đới as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933896</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Tổ ong">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes tổ ong as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933900</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Xơ mướp">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes xơ mướp as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933903</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Đậu đen">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes đậu đen as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933906</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Trứng gà">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes trứng gà as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933910</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Đường trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes đường trắng as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933914</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hoa hoàn phụ vỏ trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hoa hoàn phụ vỏ trắng as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933931</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hoa kim ngân vỏ trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hoa kim ngân vỏ trắng as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933937</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Man kinh tử vỏ trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes man kinh tử vỏ trắng as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933940</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Thương nhĩ tử vỏ trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes thương nhĩ tử vỏ trắng as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933944</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Cỏ phượng vĩ tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes cỏ phượng vĩ tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933947</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hải đới tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hải đới tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933950</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Tổ ong tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes tổ ong tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933954</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Xơ mướp tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes xơ mướp tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933957</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Đậu đen tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes đậu đen tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933960</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Trứng gà tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes trứng gà tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933963</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Đường trắng tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes đường trắng tươi as an ingredient with specific effects on the body.</data>
+      <data key="d9">effect,ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933967</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Hoa hoàn phụ vỏ trắng tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes hoa hoàn phụ vỏ trắng tươi as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933983</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ỏ tranh" target="Man kinh tử vỏ trắng tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">The ỏ tranh recipe includes man kinh tử vỏ trắng tươi as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933986</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nước uống" target="Mát máu">
+      <data key="d7">1.0</data>
+      <data key="d8">The liquid used in traditional medicine is also believed to cool the blood and stop bleeding.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933851</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nước uống" target="Cầm máu">
+      <data key="d7">1.0</data>
+      <data key="d8">The liquid used in traditional medicine is thought to constrict blood vessels and prevent excessive bleeding.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933857</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoa tân di" target="Trứng gà vỏ trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">Hoa tân di is prepared by combining it with trứng gà vỏ trắng and other ingredients.</data>
+      <data key="d9">ingredient,preparation method</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933924</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoa tân di" target="Trứng gà vỏ trắng luộc chín">
+      <data key="d7">1.0</data>
+      <data key="d8">Hoa tân di is prepared by combining it with trứng gà vỏ trắng luộc chín and other ingredients.</data>
+      <data key="d9">ingredient,preparation method</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933931</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoa tân di" target="Trứng gà vỏ trắng luộc chín tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">Hoa tân di is prepared by combining it with trứng gà vỏ trắng luộc chín tươi and other ingredients.</data>
+      <data key="d9">ingredient,preparation method</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933976</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xơ mướp" target="Sao vàng">
+      <data key="d7">1.0</data>
+      <data key="d8">Xơ mướp includes sao vàng as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933914</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xơ mướp" target="Bột">
+      <data key="d7">1.0</data>
+      <data key="d8">Xơ mướp includes bột as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933921</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xơ mướp" target="Nước sôi">
+      <data key="d7">1.0</data>
+      <data key="d8">Xơ mướp is prepared by dissolving it in nước sôi.</data>
+      <data key="d9">ingredient,preparation method</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933924</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xơ mướp" target="Sao vàng tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">Xơ mướp includes sao vàng tươi as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933967</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xơ mướp" target="Bột tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">Xơ mướp includes bột tươi as an ingredient.</data>
+      <data key="d9">ingredient</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933973</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xơ mướp" target="Nước sôi tươi">
+      <data key="d7">1.0</data>
+      <data key="d8">Xơ mướp is prepared by dissolving it in nước sôi tươi.</data>
+      <data key="d9">ingredient,preparation method</data>
+      <data key="d10">chunk-4fea9640cd7e1e6a2a130709c80f7693</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933976</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Mộc nhĩ đen">
+      <data key="d7">1.0</data>
+      <data key="d8">Táo Tàu is used as an ingredient in traditional Chinese medicine, and Mộc nhĩ đen has medicinal properties.</data>
+      <data key="d9">fruit ingredient,medicinal use</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933986</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Hoàng Kỳ">
+      <data key="d7">1.0</data>
+      <data key="d8">Táo tàu and Hoàng kỳ are used in traditional medicine for their medicinal properties.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934026</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Ý Dĩ">
+      <data key="d7">5.0</data>
+      <data key="d8">Táo tàu và ý dĩ được sử dụng trong thuốc bổ cho các vấn đề về tiêu hóa.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934054</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Gừng Nướng">
+      <data key="d7">1.0</data>
+      <data key="d8">Gừng nướng và táo tàu được sử dụng cùng nhau để tạo ra thuốc chữa trị ỉa ra máu do thấp nhiệt.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934189</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="ỉa Ra Máu Do Thấp Nhiệt">
+      <data key="d7">1.0</data>
+      <data key="d8">Táo tàu được sử dụng để chữa trị ỉa ra máu do thấp nhiệt.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934222</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Bổ TỶ,">
+      <data key="d7">1.0</data>
+      <data key="d8">Táo tàu được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934235</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Mộc Nhĩ Đen">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ đen và táo tàu được sử dụng cùng nhau để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934251</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Táo Tàu" target="Thấp Nhiệt">
+      <data key="d7">1.0</data>
+      <data key="d8">Táo tàu được sử dụng để chữa trị thấp nhiệt.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934268</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Nexon Technologies" target="Tokyo">
+      <data key="d7">2.0</data>
+      <data key="d8">Nexon Technologies is headquartered in Tokyo.</data>
+      <data key="d9">company location,headquarters</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933994</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tokyo" target="World Athletics Championship">
+      <data key="d7">2.0</data>
+      <data key="d8">The World Athletics Championship is held in Tokyo.</data>
+      <data key="d9">event location,international competition</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933997</data>
+      <data key="d13" />
+    </edge>
+    <edge source="World Athletics Championship" target="Noah Carter">
+      <data key="d7">4.0</data>
+      <data key="d8">Noah Carter broke the 100m sprint record at the World Athletics Championship.</data>
+      <data key="d9">athletic achievement,record-breaking</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934442</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoa Mào Gà Trắng" target="Trứng Om-lết">
+      <data key="d7">8.0</data>
+      <data key="d8">Hoa Mào Gà Trắng is used as an ingredient in traditional Chinese medicine, and Trứng Om-lết has medicinal properties.</data>
+      <data key="d9">plant ingredient,traditional medicine</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933997</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Om-lết" target="Đái ra máu">
+      <data key="d7">7.0</data>
+      <data key="d8">Trứng Om-lết has been used to treat đái ra máu, a condition characterized by the presence of blood in urine.</data>
+      <data key="d9">condition treatment,medicinal use</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934004</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Om-lết" target="Cuong Lá Sen">
+      <data key="d7">5.0</data>
+      <data key="d8">Cuong Lá Sen is used as an ingredient in traditional Chinese cooking, and Trứng Om-lết is a type of rau tế thải used in the dish.</data>
+      <data key="d9">food,plant ingredient</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934010</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Rau Tế Thải" target="Cuong Lá Sen">
+      <data key="d7">2.0</data>
+      <data key="d8">Cuong Lá Sen is used as an ingredient in traditional Chinese cooking, and Rau Tế Thải is a type of rau tế thải used in the dish.</data>
+      <data key="d9">food,plant ingredient</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934004</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Rau Tế Thải" target="Đái ra máu">
+      <data key="d7">1.0</data>
+      <data key="d8">Rau Tế Thải has been used to treat đái ra máu, a condition characterized by the presence of blood in urine.</data>
+      <data key="d9">condition treatment,food</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934010</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đái ra máu" target="Trứng Om-lét">
+      <data key="d7">1.0</data>
+      <data key="d8">Trứng Om-lết has been used to treat đái ra máu, a condition characterized by the presence of blood in urine.</data>
+      <data key="d9">condition treatment,medicinal use</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934020</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cuong Lá Sen" target="Trứng Om-lét">
+      <data key="d7">1.0</data>
+      <data key="d8">Cuong Lá Sen is used as an ingredient in traditional Chinese cooking, and Trứng Om-lết is a type of rau tế thải used in the dish.</data>
+      <data key="d9">food,plant ingredient</data>
+      <data key="d10">chunk-823991737e4cc613d9c031b86b76dd50</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934017</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoàng Kỳ" target="Sắn Dây">
+      <data key="d7">1.0</data>
+      <data key="d8">Hoàng Kỳ and Sắn dây are used in traditional medicine for their medicinal properties.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934020</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoàng Kỳ" target="Sơn Dược">
+      <data key="d7">5.0</data>
+      <data key="d8">Hoàng kỳ và Sơn dược được sử dụng trong thuốc bổ cho các vấn đề về tiêu hóa.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934047</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sắn Dây" target="Lá Sen">
+      <data key="d7">1.0</data>
+      <data key="d8">Sắn dây and Lá sen are used in traditional medicine for their medicinal properties.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934026</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sắn Dây" target="Mứt Hồng">
+      <data key="d7">5.0</data>
+      <data key="d8">Sắn dây và mứt hồng được sử dụng trong thuốc bổ cho các vấn đề về tiêu hóa.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934054</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Lá Sen" target="Cháo Sơn Dược">
+      <data key="d7">5.0</data>
+      <data key="d8">Lá sen được nấu cùng với cháo sơn dược để tạo thành một loại thuốc bổ.</data>
+      <data key="d9">food preparation,recipe</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934061</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Lá Sen" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">Lá sen may be related to eating egg.</data>
+      <data key="d9">food interaction,medical condition</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934391</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đẳng Sâm" target="Cam Thảo">
+      <data key="d7">5.0</data>
+      <data key="d8">Đẳng sâm and Cam thảo are used in traditional medicine for their medicinal properties.&lt;SEP&gt;Đẳng sâm và Cam thảo được sử dụng trong thuốc bổ cho các vấn đề về tiêu hóa.</data>
+      <data key="d9">medicinal properties,plant usage</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934034</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Lá Sen" target="Bột Sắn Dây Nấu Cháo">
+      <data key="d7">1.0</data>
+      <data key="d8">Bột sắn dây và cháo lá sen are prepared together as a type of traditional medicine.</data>
+      <data key="d9">food preparation,recipe</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934034</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Sắn Dây Nấu Cháo" target="Hoàng Kỳ, Táo Tàu, Gạo">
+      <data key="d7">17.0</data>
+      <data key="d8">Hoàng kỳ, táo tàu, và bột sắn dây are prepared together as a type of traditional medicine.&lt;SEP&gt;Bột sắn dây và Hoàng kỳ, táo tàu, gạo được sử dụng trong thuốc bổ cho các vấn đề về tiêu hóa.</data>
+      <data key="d9">food preparation,medicinal properties,plant usage,recipe</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934040</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Sắn Dây Nấu Cháo" target="Cháo Sơn Dược">
+      <data key="d7">9.0</data>
+      <data key="d8">Cháo sơn dược và bột sắn dây nấu cùng để tạo thành một loại thuốc bổ.&lt;SEP&gt;Bột sắn dây và cháo sơn dược nấu cùng để tạo thành một loại thuốc bổ.</data>
+      <data key="d9">food preparation,recipe</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934047</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hoàng Kỳ, Táo Tàu, Gạo" target="Cháo Sơn Dược">
+      <data key="d7">21.0</data>
+      <data key="d8">Hoàng kỳ, táo tàu, gạo và cháo sơn dược được nấu cùng để tạo thành một loại thuốc bổ.&lt;SEP&gt;Cháo sơn dược và Hoàng kỳ, táo tàu, gạo được sử dụng trong thuốc bổ cho các vấn đề về tiêu hóa.&lt;SEP&gt;Cháo sơn dược và Hoàng kỳ, táo tàu, gạo được nấu cùng để tạo thành một loại thuốc bổ.</data>
+      <data key="d9">food preparation,medicinal properties,plant usage,recipe</data>
+      <data key="d10">chunk-6cd3fb3c2608d553159445feec34f841</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934044</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Ý Dĩ">
+      <data key="d7">1.0</data>
+      <data key="d8">Cháo Sơn dược and ý dĩ are used together to treat sore throats.</data>
+      <data key="d9">medicinal herbs,treatment for sore throat</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934081</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Mứt Hồng">
+      <data key="d7">1.0</data>
+      <data key="d8">Cháo Sơn dược and mứt hồng are used together to treat sore throats.</data>
+      <data key="d9">medicinal fruits,treatment for sore throat</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934087</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Hải Sâm">
+      <data key="d7">5.0</data>
+      <data key="d8">Cháo Sơn dược and hải sâm are used together to treat barking dogs.&lt;SEP&gt;Hải sâm recipe is used in cháo sơn dược recipes to treat barking dogs.&lt;SEP&gt;Hải sâm is used in cháo sơn dược recipes to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934090</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Ruột Lợn">
+      <data key="d7">5.0</data>
+      <data key="d8">Cháo Sơn dược and ruột lợn are used together to treat barking dogs.&lt;SEP&gt;Ruột lợn recipe is used in cháo sơn dược recipes to treat barking dogs.&lt;SEP&gt;Ruột lợn is used in cháo sơn dược recipes to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934097</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Sốt nhẹ do âm hư nóng trong">
+      <data key="d7">3.0</data>
+      <data key="d8">Sốt nhẹ do âm hư nóng trong is treated with cháo sơn dược and other medicinal herbs.</data>
+      <data key="d9">medicinal herbs,treatment for sore throat</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934104</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Sứa Biển">
+      <data key="d7">3.0</data>
+      <data key="d8">Sứa biển recipe is used in cháo sơn dược recipes to treat barking dogs.&lt;SEP&gt;Sứa biển is used in cháo sơn dược recipes to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934107</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Thịt Sò Biển">
+      <data key="d7">3.0</data>
+      <data key="d8">Thịt sò biển recipe is used in cháo sơn dược recipes to treat barking dogs.&lt;SEP&gt;Thịt sò biển is used in cháo sơn dược recipes to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934114</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cháo Sơn Dược" target="Tiết Ba Ba">
+      <data key="d7">3.0</data>
+      <data key="d8">Tiết ba ba recipe is used in cháo sơn dược recipes to treat barking dogs.&lt;SEP&gt;Tiết ba ba is used in cháo sơn dược recipes to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934120</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="Ý Dĩ">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược and ý dĩ are used together to treat sore throats.</data>
+      <data key="d9">medicinal herbs,treatment for sore throat</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934067</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="Mứt Hồng">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược and mứt hồng are used together to treat sore throats.</data>
+      <data key="d9">medicinal fruits,treatment for sore throat</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934074</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="Tam Thất">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược và tam thất được sử dụng cùng nhau để tạo ra thuốc chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934186</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="Long Nhãn">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược và long nhãn được sử dụng cùng nhau để tạo ra thuốc chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934189</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="ỉa Ra Máu Do Tỳ Vị Hư Hàn">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược được sử dụng để chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934206</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="Thị Năng">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược và thị năng được sử dụng cùng nhau để tạo ra thuốc chữa trị các bệnh về đường hô hấp.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934251</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sơn Dược" target="Tỳ Vị Hư Hàn">
+      <data key="d7">1.0</data>
+      <data key="d8">Sơn dược được sử dụng để chữa trị tỳ vị hư hàn.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934258</data>
+      <data key="d13" />
+    </edge>
+    <edge source="huyết" target="ăm hư">
+      <data key="d7">1.0</data>
+      <data key="d8">Huyết and ăm hư are related concepts in health and wellness.</data>
+      <data key="d9">health concept,heat in the body</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934061</data>
+      <data key="d13" />
+    </edge>
+    <edge source="huyết" target="tăng cường thể lực kéo dài tuổi thọ">
+      <data key="d7">1.0</data>
+      <data key="d8">Tăng cường thể lực kéo dài tuổi thọ is related to huyết as a means of achieving an extended lifespan.</data>
+      <data key="d9">extended lifespan through physical strengthening,health concept</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934067</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ba Ba" target="Bối Mẫu">
+      <data key="d7">3.0</data>
+      <data key="d8">Ba ba is related to bối mẫu as it pertains to the balance of yin and yang energies in spiritual practices.&lt;SEP&gt;Ba ba recipe and bối mẫu are used together to achieve yin-yang balance in spiritual practices.</data>
+      <data key="d9">spiritual energy,yin-yang balance</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934074</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ba Ba" target="Tri Mẫu">
+      <data key="d7">2.0</data>
+      <data key="d8">Ba ba is related to tri mẫu as it pertains to the balance of yin and yang energies in spiritual practices.&lt;SEP&gt;Ba ba recipe and tri mẫu are used together to achieve yin-yang balance in spiritual practices.</data>
+      <data key="d9">spiritual energy,yin-yang balance</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934081</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ba Ba" target="Tiết Ba Ba">
+      <data key="d7">2.0</data>
+      <data key="d8">Ba ba recipe and tiết ba ba are used together to treat barking dogs.</data>
+      <data key="d9">medicinal herbs,treatment for barking dog</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934097</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ba Ba" target="Bóng Mẫu">
+      <data key="d7">3.0</data>
+      <data key="d8">Bóng mẫu is related to ba ba as it pertains to the balance of yin and yang energies in spiritual practices.&lt;SEP&gt;Bóng mẫu recipe is used to achieve yin-yang balance in spiritual practices.</data>
+      <data key="d9">spiritual energy,yin-yang balance</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934120</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ba Ba" target="Trung Nguyên">
+      <data key="d7">3.0</data>
+      <data key="d8">Trung nguyên is related to ba ba as it pertains to the balance of yin and yang energies in spiritual practices.&lt;SEP&gt;Trung nguyên recipe is used to achieve yin-yang balance in spiritual practices.</data>
+      <data key="d9">spiritual energy,yin-yang balance</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934127</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ba Ba" target="Hành Nhân">
+      <data key="d7">3.0</data>
+      <data key="d8">Hành nhân is related to ba ba as it pertains to the balance of yin and yang energies in spiritual practices.&lt;SEP&gt;Hành nhân recipe is used to achieve yin-yang balance in spiritual practices.</data>
+      <data key="d9">spiritual energy,yin-yang balance</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934130</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sốt nhẹ do âm hư nóng trong" target="Bệnh trạng như trên">
+      <data key="d7">2.0</data>
+      <data key="d8">Bệnh trạng như trên is related to sore throat caused by heat in the body.</data>
+      <data key="d9">health concept,heat in the body</data>
+      <data key="d10">chunk-5de59a439d43550b85df7da5640d731d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934107</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Xuất Huyết" target="Liều Lượng">
+      <data key="d7">1.0</data>
+      <data key="d8">3-5 con ấu trùng ong, một ít đường trắng</data>
+      <data key="d9">treatment method</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934130</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cá Mực" target="Bạch Cập">
+      <data key="d7">1.0</data>
+      <data key="d8">Cá mực là một loại động vật biển, bạch cập là đá quý.</data>
+      <data key="d9">mineral source</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934137</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bạch Cập" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">Bạch cập may be related to eating egg.</data>
+      <data key="d9">food interaction,medical condition</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934378</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bạch Cập" target="Trắc Bách Diệp">
+      <data key="d7">1.0</data>
+      <data key="d8">Bạch cập is an ingredient and a potential medical condition related to trắc bách diệp.</data>
+      <data key="d9">ingredient,medical condition</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934395</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cá Nheo Hấp Xôi" target="Cá Nheo Hầm">
+      <data key="d7">2.0</data>
+      <data key="d8">Cá nheo hấp xôi và cá nheo hầm có phương pháp chế biến khác nhau.&lt;SEP&gt;Cá nheo hầm có vị ngọt hơn cá nheo hấp xôi.</data>
+      <data key="d9">cooking method,taste</data>
+      <data key="d10">chunk-4a31be1f025b002536ecadb61cde5293</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934145</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Muối" target="Tổ Ong">
+      <data key="d7">1.0</data>
+      <data key="d8">Muối được sử dụng như một thành phần trong thuốc của tổ ong.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934180</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tổ Ong" target="Viêm Mũi">
+      <data key="d7">1.0</data>
+      <data key="d8">Tổ ong được sử dụng để chữa trị viêm mũi.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934196</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tổ Ong" target="Đại Tràng">
+      <data key="d7">1.0</data>
+      <data key="d8">Tổ ong được sử dụng để chữa trị đại tràng.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934275</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tổ Ong" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Tổ ong không được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934306</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tam Thất" target="ỉa Ra Máu Do Tỳ Vị Hư Hàn">
+      <data key="d7">1.0</data>
+      <data key="d8">Tam thất được sử dụng để chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934209</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tam Thất" target="Sa Sâm">
+      <data key="d7">1.0</data>
+      <data key="d8">Sa sâm and tam thất are both used in traditional Chinese medicine.</data>
+      <data key="d9">herbal remedy,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934329</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tam Thất" target="Trứng Gà">
+      <data key="d7">2.0</data>
+      <data key="d8">Tam Thất uses egg as an ingredient in the recipe.&lt;SEP&gt;Trứng gà is an ingredient in some of Tam Thất's products.</data>
+      <data key="d9">food component,food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef&lt;SEP&gt;chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934355</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tam Thất" target="Cruz">
+      <data key="d7">5.0</data>
+      <data key="d8">Cruz's vision of control and order contrasts with Tam Thất's approach to traditional medicine.</data>
+      <data key="d9">control,vision</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934422</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Long Nhãn" target="ỉa Ra Máu Do Tỳ Vị Hư Hàn">
+      <data key="d7">1.0</data>
+      <data key="d8">Long nhãn được sử dụng để chữa trị ỉa ra máu do tỳ vị hư hàn.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934213</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Long Nhãn" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Long nhãn được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934282</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Gừng Nướng" target="ỉa Ra Máu Do Thấp Nhiệt">
+      <data key="d7">1.0</data>
+      <data key="d8">Gừng nướng được sử dụng để chữa trị ỉa ra máu do thấp nhiệt.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934219</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Gừng Nướng" target="N/A,">
+      <data key="d7">1.0</data>
+      <data key="d8">Gừng nướng không có mối quan hệ trực tiếp nào với các khía cạnh khác của bài thuốc.</data>
+      <data key="d9">relationship description</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934241</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Gừng Nướng" target="Thấp Nhiệt">
+      <data key="d7">1.0</data>
+      <data key="d8">Gừng nướng được sử dụng để chữa trị thấp nhiệt.</data>
+      <data key="d9">application,treatment</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934265</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Gừng Nướng" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Gừng nướng được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934275</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Viêm Mũi" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Viêm mũi không được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934286</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Thị Năng" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Thị năng được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934289</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tỳ Vị Hư Hàn" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Tỳ vị hư hàn không được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934292</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Hư Hàn" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Hư hàn không được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934296</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Thấp Nhiệt" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Thấp nhiệt không được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934299</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đại Tràng" target="Mộc Nhĩ Đen">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ đen được sử dụng để chữa trị đại tràng.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934268</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Đại Tràng" target="Bổ TỶ,">
+      <data key="d7">2.0</data>
+      <data key="d8">Đại tràng không được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934302</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Vịt Hấp Cách Thủy" target="Lao Phổi">
+      <data key="d7">1.0</data>
+      <data key="d8">Vịt hấp cách thủy is often served with dishes that promote "cooling the lungs" or lao phổi.</data>
+      <data key="d9">cuisine,health benefit</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934312</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sa Sâm" target="Thịt Rùa">
+      <data key="d7">1.0</data>
+      <data key="d8">Sa sâm and thịt rùa are both used in traditional Vietnamese medicine.</data>
+      <data key="d9">food pairing,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934312</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sa Sâm" target="Trứng Gà">
+      <data key="d7">1.0</data>
+      <data key="d8">Sa sâm is often paired with trứng gà to promote "cooling the lungs" or lao phổi.</data>
+      <data key="d9">health benefit,traditional medicine</data>
+      <data key="d10">chunk-10de4c00d7523830026190591d1d12e5</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934319</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Gà" target="Lao Phổi Ho">
+      <data key="d7">1.0</data>
+      <data key="d8">Lao phổi ho may be related to eating egg.</data>
+      <data key="d9">food interaction,medical condition</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934364</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Gà" target="Bột Tam Thất">
+      <data key="d7">1.0</data>
+      <data key="d8">Bột tam thất is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934368</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Gà" target="Nước Ngó Sen">
+      <data key="d7">1.0</data>
+      <data key="d8">Nước ngó sen is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934375</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Gà" target="Tổ Yến">
+      <data key="d7">1.0</data>
+      <data key="d8">Tổ yến is used with egg in the recipe.</data>
+      <data key="d9">food preparation,ingredient</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934381</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Trứng Gà" target="Trắc Bách Diệp">
+      <data key="d7">1.0</data>
+      <data key="d8">Trắc bách diệp may be related to eating egg.</data>
+      <data key="d9">food interaction,medical condition</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934384</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Tổ Yến" target="Trắc Bách Diệp">
+      <data key="d7">1.0</data>
+      <data key="d8">Trắc bách diệp and tổ yến are ingredients and potential medical conditions related to each other.</data>
+      <data key="d9">ingredient,medical condition</data>
+      <data key="d10">chunk-6786afbfb4d548114c919a0fb33dd3ef</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934402</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Jordan" target="Alex">
+      <data key="d7">4.0</data>
+      <data key="d8">Jordan and Alex share a commitment to discovery, which contrasts with Cruz's vision of control and order.</data>
+      <data key="d9">rebellion,shared goals</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934422</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Jordan" target="Taylor">
+      <data key="d7">4.0</data>
+      <data key="d8">Taylor and Jordan interact directly regarding the device, leading to a moment of mutual respect and an uneasy truce.</data>
+      <data key="d9">mutual understanding,respect</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934429</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Taylor" target="Alex">
+      <data key="d7">4.0</data>
+      <data key="d8">Alex observes Taylor's authoritarian behavior and notes changes in Taylor's attitude towards the device.</data>
+      <data key="d9">change in perspective,observation</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934432</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Taylor" target="The Device">
+      <data key="d7">4.0</data>
+      <data key="d8">Taylor shows reverence towards The Device, indicating its importance and potential impact.</data>
+      <data key="d9">reverence,technological significance</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934436</data>
+      <data key="d13" />
+    </edge>
+    <edge source="The Device" target="Noah Carter">
+      <data key="d7">4.0</data>
+      <data key="d8">Noah Carter used The Device to enhance his performance and break the 100m sprint record.</data>
+      <data key="d9">athletic achievement,performance enhancement</data>
+      <data key="d10">chunk-b19e59acac12e558bdef4451178d7fcd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934439</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Sốt cao" target="sợ gió">
+      <data key="d7">1.0</data>
+      <data key="d8">Feeling feverish and fearful.</data>
+      <data key="d9">fever and fear</data>
+      <data key="d10">chunk-0e43a79780e0977d2efab34f49c95d4d</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933696</data>
+      <data key="d13" />
+    </edge>
+    <edge source="mộc nhĩ" target="âm">
+      <data key="d7">1.0</data>
+      <data key="d8">âm is used as an ingredient in traditional medicine.</data>
+      <data key="d9">ingredient,medicinal use</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933755</data>
+      <data key="d13" />
+    </edge>
+    <edge source="mộc nhĩ" target="thái nhỏ">
+      <data key="d7">1.0</data>
+      <data key="d8">thái nhỏ is also used as an ingredient in traditional medicine.</data>
+      <data key="d9">ingredient,medicinal use</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933765</data>
+      <data key="d13" />
+    </edge>
+    <edge source="cây thanh hao" target="sốt rét">
+      <data key="d7">1.0</data>
+      <data key="d8">cây thanh hao is used to treat sore throat and fever.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933772</data>
+      <data key="d13" />
+    </edge>
+    <edge source="bột cây huệ" target="ho ra máu">
+      <data key="d7">1.0</data>
+      <data key="d8">bột cây huệ is used to treat coughs and colds.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933781</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ho ra máu" target="mộc nhĩ trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">mộc nhĩ trắng is used to treat ho ra máu.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933788</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ho ra máu" target="rễ cỏ tranh">
+      <data key="d7">1.0</data>
+      <data key="d8">rễ cỏ tranh is used to treat sore throat and fever.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933794</data>
+      <data key="d13" />
+    </edge>
+    <edge source="ho ra máu" target="ngó sen">
+      <data key="d7">1.0</data>
+      <data key="d8">ngó sen is used to treat sore throat and fever.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933804</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bốc Nhiệt" target="Tiết Ba Ba Hòa Rượu">
+      <data key="d7">1.0</data>
+      <data key="d8">Tiết Ba Ba Hòa Rượu is used to treat bốc nhiệt.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933810</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Cây Thanh Hao Ngâm Rượu" target="Sốt Rét">
+      <data key="d7">1.0</data>
+      <data key="d8">Cây Thanh Hao is used to treat sore throat and fever.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933823</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bột Cây Huệ Khô Nấu Cháo" target="Ho Ra Máu">
+      <data key="d7">1.0</data>
+      <data key="d8">Bột Cây Huệ is used to treat coughs and colds.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933830</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Ho Ra Máu" target="Mộc Nhĩ Trắng">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc Nhĩ is used to treat ho ra máu.</data>
+      <data key="d9">medicinal use,symptom treatment</data>
+      <data key="d10">chunk-ce40552fe19b5dca50eafe76c98a9b3f</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762933836</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Bổ TỶ," target="Mộc Nhĩ Đen">
+      <data key="d7">1.0</data>
+      <data key="d8">Mộc nhĩ đen được sử dụng để bổ tỳ.</data>
+      <data key="d9">application,ingredient</data>
+      <data key="d10">chunk-7a2c2120ccd53d5e0c1fe2fd6a6852bd</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1762934248</data>
+      <data key="d13" />
+    </edge>
+  </graph>
+</graphml>
