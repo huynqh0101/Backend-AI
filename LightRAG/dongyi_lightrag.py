@@ -303,7 +303,7 @@ async def initialize_lightrag():
             ),
             
             # Graph config
-            chunk_token_size=600,  # ✅ GIẢM TỪ 800 XUỐNG 600 (chunks nhỏ hơn = ít lỗi hơn)
+            chunk_token_size=600,
             chunk_overlap_token_size=50,
         )
         
@@ -322,14 +322,12 @@ async def initialize_lightrag():
         return None
 
 
-# ============= BƯỚC 3: INSERT DỮ LIỆU =============
 async def build_knowledge_graph(rag: LightRAG, documents: str):
     """Insert documents vào LightRAG"""
     print("\n📥 Bắt đầu insert dữ liệu vào LightRAG...")
     print(f"   Tổng độ dài: {len(documents)} ký tự")
-    
-    # ✅ GIẢM CHUNK SIZE ĐỂ TRÁNH QUÁ TẢI
-    max_chunk_size = 20000  # Giảm từ 50000 xuống 20000
+
+    max_chunk_size = 20000 
     chunks = []
     current_chunk = ""
     
@@ -351,7 +349,7 @@ async def build_knowledge_graph(rag: LightRAG, documents: str):
         try:
             await rag.ainsert(chunk)
             print(f"   ✅ Chunk {i} hoàn tất")
-            await asyncio.sleep(3)  # ✅ TĂNG DELAY
+            await asyncio.sleep(3)
         except Exception as e:
             print(f"   ⚠️  Lỗi chunk {i}: {str(e)[:200]}")
             continue
@@ -373,7 +371,7 @@ async def test_query(rag: LightRAG):
         try:
             result = await rag.aquery(
                 query,
-                param=QueryParam(mode="naive", only_need_context=False, top_k=3)  # ✅ DÙNG "naive" MODE
+                param=QueryParam(mode="naive", only_need_context=False, top_k=3)
             )
             print(f"📝 Kết quả:\n{result[:500]}...")
         except Exception as e:
