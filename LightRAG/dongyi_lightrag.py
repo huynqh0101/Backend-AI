@@ -101,9 +101,9 @@ def ensure_vietnamese(text: str) -> str:
     return text.strip()
 
 async def sentence_transformer_embedding(texts: list[str]) -> np.ndarray:
-    """Embedding function sử dụng SentenceTransformer"""
+    """Embedding function sử dụng SentenceTransformer cho tiếng Việt"""
     try:
-        model = SentenceTransformer("all-MiniLM-L6-v2")
+        model = SentenceTransformer("bkai-foundation-models/vietnamese-bi-encoder")
         embeddings = model.encode(texts, convert_to_numpy=True)
         return embeddings
     except Exception as e:
@@ -295,10 +295,10 @@ async def initialize_lightrag():
                 "num_ctx": 8192
             },
             
-            # Embedding config - SentenceTransformer
+            # Embedding config - Vietnamese bi-encoder
             embedding_func=EmbeddingFunc(
-                embedding_dim=384,
-                max_token_size=512,
+                embedding_dim=768,  # vietnamese-bi-encoder có 768 dimensions
+                max_token_size=256,
                 func=sentence_transformer_embedding,
             ),
             
