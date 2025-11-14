@@ -158,4 +158,12 @@ Hãy trả lời một cách rõ ràng, chi tiết và bằng tiếng Việt."""
             traceback.print_exc()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    graph = Graph(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD), name=NEO4J_DATABASE)
+    test_query = "sốt"
+    entities, relations = query_neo4j(graph, test_query, top_k=5)
+    print("Entities:")
+    for e in entities:
+        print(e)
+    print("\nRelations:")
+    for r in relations:
+        print(r)
