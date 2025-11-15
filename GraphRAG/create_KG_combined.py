@@ -212,7 +212,7 @@ if __name__ == "__main__":
     NEO4J_USERNAME = "neo4j"
     NEO4J_PASSWORD = "huy1552004"
     
-    graph = Graph(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD), name="dongyicombined")
+    graph = Graph(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD), name="yhct")
     
     print("=" * 60)
     print("🚀 BẮT ĐẦU TẠO KNOWLEDGE GRAPH KẾT HỢP")
