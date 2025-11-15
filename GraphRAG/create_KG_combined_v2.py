@@ -6,18 +6,15 @@ import re
 def uppercase_first_letter(text):
     if isinstance(text, str) and text.strip():
         return text.strip().capitalize()
-    else:
-        return text
+    return text
 
 def clear_graph():
-    query = """
-    MATCH (n)
-    DETACH DELETE n
-    """
+    query = "MATCH (n) DETACH DELETE n"
     graph.run(query)
-    print("Graph has been cleared...")
+    print("✓ Graph cleared")
 
 def parse_list_field(text):
+    """Parse comma-separated or semicolon-separated list"""
     if not isinstance(text, str) or not text.strip():
         return []
     items = re.split(r'[,;]', text)
@@ -31,16 +28,18 @@ def get_or_create_node(label, key, value, **properties):
     return node
 
 def extract_ingredients(lieu_luong_cach_dung):
+    """Extract ingredients from dosage and usage instructions"""
     if not isinstance(lieu_luong_cach_dung, str) or not lieu_luong_cach_dung.strip():
         return []
     
-    pattern = r'(\d+(?:\.\d+)?g?\s*(?:ml)?)\s+([^,\.]+?)(?=\s*[,\.]|\s+\d+|\s*$)'
+    # Pattern tìm: số_lượng + tên_nguyên_liệu
+    pattern = r'(\d+(?:\.\d+)?(?:g|ml|mg)?)\s*([A-ZĐa-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ][A-Za-zàáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵđ\s]+?)(?=\s*[,\.\;]|\s+\d+|\s*$)'
     matches = re.findall(pattern, lieu_luong_cach_dung)
     
     ingredients = []
     for quantity, ingredient in matches:
         ingredient = ingredient.strip()
-        if len(ingredient) > 2:
+        if len(ingredient) > 2 and not re.match(r'^(cho|thêm|vào|rửa|sạch|nấu|sắc)$', ingredient.lower()):
             ingredients.append({
                 'name': uppercase_first_letter(ingredient),
                 'quantity': quantity.strip()
@@ -48,16 +47,28 @@ def extract_ingredients(lieu_luong_cach_dung):
     
     return ingredients
 
-def extract_effects(text):
-    if not isinstance(text, str) or not text.strip():
+def extract_symptoms(chua_tri):
+    """Extract symptoms/conditions from treatment description"""
+    if not isinstance(chua_tri, str) or not chua_tri.strip():
         return []
     
-    effects = re.split(r'[,\.\;]', text)
+    # Tách theo dấu phẩy, chấm phẩy hoặc "và"
+    symptoms = re.split(r'[,;]|\s+và\s+', chua_tri)
+    return [uppercase_first_letter(s.strip()) for s in symptoms if s.strip()]
+
+def extract_effects(cong_hieu):
+    """Extract individual effects"""
+    if not isinstance(cong_hieu, str) or not cong_hieu.strip():
+        return []
+    
+    effects = re.split(r'[,\.\;]', cong_hieu)
     return [uppercase_first_letter(effect.strip()) for effect in effects if effect.strip()]
 
 # ============= PROCESS BÀI THUỐC =============
 def process_bai_thuoc(row):
     try:
+        ma_benh = row['ma_benh']
+        ten_benh = row['ten_benh']
         ten_bai_thuoc = row['ten_bai_thuoc']
         chua_tri = row['chua_tri']
         lieu_luong_cach_dung = row['lieu_luong_cach_dung']
@@ -68,63 +79,76 @@ def process_bai_thuoc(row):
         luu_y = row['luu_y']
         cong_dung_khac = row['cong_dung_khac']
 
-        # 1. Tạo node BÀI THUỐC
-        if ten_bai_thuoc:
-            remedy_node = get_or_create_node(
-                "Bài_Thuốc", "tên", ten_bai_thuoc,
-                cách_dùng=lieu_luong_cach_dung if isinstance(lieu_luong_cach_dung, str) else "",
-                chú_ý=chu_y if isinstance(chu_y, str) else "",
-                ghi_chú=ghi_chu if isinstance(ghi_chu, str) else "",
-                đối_tượng=doi_tuong_phu_hop if isinstance(doi_tuong_phu_hop, str) else "",
-                lưu_ý=luu_y if isinstance(luu_y, str) else ""
+        # 1. Tạo node BỆNH
+        if ten_benh and isinstance(ten_benh, str) and ten_benh.strip():
+            disease_node = get_or_create_node(
+                "BỆNH", "tên_bệnh", ten_benh,
+                mã_bệnh=str(ma_benh) if ma_benh else ""
             )
 
-            # 2. Tạo node BỆNH và liên kết
-            if chua_tri and isinstance(chua_tri, str) and chua_tri.strip():
-                diseases = re.split(r'[,;]|\s+và\s+', chua_tri)
-                for disease_name in diseases:
-                    disease_name = disease_name.strip()
-                    if disease_name:
-                        disease_node = get_or_create_node(
-                            "Bệnh", "tên", uppercase_first_letter(disease_name)
-                        )
-                        graph.create(Relationship(remedy_node, "CHỮA", disease_node))
+        # 2. Tạo node BÀI THUỐC
+        if ten_bai_thuoc and isinstance(ten_bai_thuoc, str) and ten_bai_thuoc.strip():
+            remedy_node = get_or_create_node(
+                "BÀI_THUỐC", "tên_bài_thuốc", ten_bai_thuoc,
+                liều_lượng_cách_dùng=lieu_luong_cach_dung if isinstance(lieu_luong_cach_dung, str) else "",
+                chú_ý=chu_y if isinstance(chu_y, str) else "",
+                ghi_chú=ghi_chu if isinstance(ghi_chu, str) else "",
+                đối_tượng_phù_hợp=doi_tuong_phu_hop if isinstance(doi_tuong_phu_hop, str) else "",
+                lưu_ý=luu_y if isinstance(luu_y, str) else "",
+                công_dụng_khác=cong_dung_khac if isinstance(cong_dung_khac, str) else ""
+            )
+            
+            # Liên kết BÀI THUỐC -> BỆNH
+            if ten_benh:
+                graph.create(Relationship(remedy_node, "ĐIỀU_TRỊ", disease_node))
 
-            # 3. Tạo node NGUYÊN LIỆU và liên kết với CÂY THUỐC
-            ingredients = extract_ingredients(lieu_luong_cach_dung)
-            for ingredient_info in ingredients:
-                ingredient_node = get_or_create_node(
-                    "Nguyên_Liệu", "tên", ingredient_info['name']
+        # 3. Tạo node TRIỆU_CHỨNG từ chua_tri
+        symptoms = extract_symptoms(chua_tri)
+        for symptom in symptoms:
+            if symptom:
+                symptom_node = get_or_create_node(
+                    "TRIỆU_CHỨNG", "mô_tả", symptom
                 )
-                
-                # Link BÀI THUỐC -> NGUYÊN LIỆU
-                rel = Relationship(remedy_node, "DÙNG", ingredient_node)
-                rel['liều_lượng'] = ingredient_info['quantity']
-                graph.create(rel)
-                
-                # Link NGUYÊN LIỆU -> CÂY THUỐC (nếu có)
-                herb_node = graph.nodes.match("Cây_Thuốc", tên=ingredient_info['name']).first()
-                if not herb_node:
-                    # Thử tìm theo tên khác
-                    alias_node = graph.nodes.match("Biệt_Danh", tên=ingredient_info['name']).first()
-                    if alias_node:
-                        herb_node = list(graph.match((None, None), r_type="GỌI_LÀ"))[0].start_node
-                
-                if herb_node:
-                    graph.create(Relationship(ingredient_node, "LÀ", herb_node))
+                # Liên kết BỆNH -> TRIỆU_CHỨNG
+                if ten_benh:
+                    graph.create(Relationship(disease_node, "CÓ_TRIỆU_CHỨNG", symptom_node))
+                # Liên kết BÀI THUỐC -> TRIỆU_CHỨNG
+                if ten_bai_thuoc:
+                    graph.create(Relationship(remedy_node, "TRỊ_TRIỆU_CHỨNG", symptom_node))
 
-            # 4. Tạo node TÁC DỤNG (merge CÔNG HIỆU)
-            effects = extract_effects(cong_hieu)
-            for effect_name in effects:
-                if effect_name:
-                    effect_node = get_or_create_node("Tác_Dụng", "mô_tả", effect_name)
-                    graph.create(Relationship(remedy_node, "CÓ", effect_node))
+        # 4. Tạo node NGUYÊN LIỆU
+        ingredients = extract_ingredients(lieu_luong_cach_dung)
+        for ingredient_info in ingredients:
+            ingredient_node = get_or_create_node(
+                "NGUYÊN_LIỆU", "tên_nguyên_liệu", ingredient_info['name']
+            )
+            
+            # Liên kết với CÂY THUỐC nếu tồn tại
+            herb_node = graph.nodes.match("CÂY_THUỐC", tên_chính=ingredient_info['name']).first()
+            if herb_node:
+                graph.create(Relationship(ingredient_node, "LÀ_DƯỢC_LIỆU_TỪ", herb_node))
+            
+            # Liên kết BÀI THUỐC -> NGUYÊN LIỆU
+            if ten_bai_thuoc:
+                graph.create(Relationship(
+                    remedy_node, "CHỨA_NGUYÊN_LIỆU", ingredient_node,
+                    liều_lượng=ingredient_info['quantity']
+                ))
 
-        print(f"✓ Đã xử lý bài thuốc: {ten_bai_thuoc}")
+        # 5. Tạo node CÔNG HIỆU
+        effects = extract_effects(cong_hieu)
+        for effect_name in effects:
+            if effect_name:
+                effect_node = get_or_create_node(
+                    "CÔNG_HIỆU", "tên_công_hiệu", effect_name
+                )
+                if ten_bai_thuoc:
+                    graph.create(Relationship(remedy_node, "CÓ_CÔNG_HIỆU", effect_node))
+
+        print(f"✓ Processed: {ten_bai_thuoc}")
 
     except Exception as e:
         print(f"❌ Error processing bài thuốc: {e}")
-        print(f"   Row: {row.get('ten_bai_thuoc', 'unknown')}")
 
 # ============= PROCESS CÂY THUỐC =============
 def process_cay_thuoc(row):
@@ -140,56 +164,48 @@ def process_cay_thuoc(row):
         tinh_vi_tac_dung = row['Tính vị, tác dụng']
         cong_dung_chi_dinh = row['Công dụng, chỉ định và phối hợp']
         lieu_dung = row['Liều dùng']
+        don_thuoc = row['Đơn thuốc']
 
-        # 1. Tạo node CÂY THUỐC
+        # Herb node
         if ten_chinh:
             herb_node = get_or_create_node(
-                "Cây_Thuốc", "tên", ten_chinh,
+                "CÂY_THUỐC", "tên_chính", ten_chinh,
                 tên_khoa_học=ten_khoa_hoc if isinstance(ten_khoa_hoc, str) else "",
                 mô_tả=mo_ta if isinstance(mo_ta, str) else "",
-                nơi_sống=noi_song_thu_hai if isinstance(noi_song_thu_hai, str) else "",
-                tính_vị=tinh_vi_tac_dung if isinstance(tinh_vi_tac_dung, str) else "",
+                nơi_sống_thu_hái=noi_song_thu_hai if isinstance(noi_song_thu_hai, str) else "",
+                thành_phần_hóa_học=thanh_phan_hoa_hoc if isinstance(thanh_phan_hoa_hoc, str) else "",
+                tính_vị_tác_dụng=tinh_vi_tac_dung if isinstance(tinh_vi_tac_dung, str) else "",
                 liều_dùng=lieu_dung if isinstance(lieu_dung, str) else ""
             )
 
-            # 2. Tạo node BIỆT DANH (tên khác)
+            # Aliases
             ten_khac_list = parse_list_field(ten_khac)
             for alias in ten_khac_list:
-                alias_node = get_or_create_node("Biệt_Danh", "tên", alias)
-                graph.create(Relationship(herb_node, "GỌI_LÀ", alias_node))
+                alias_node = get_or_create_node("TÊN_KHÁC", "tên", alias)
+                graph.create(Relationship(herb_node, "CÓ_TÊN_GỌI_KHÁC", alias_node))
 
-            # 3. Tạo node HỌ
+            # Family
             if ho and isinstance(ho, str) and ho.strip():
-                family_node = get_or_create_node("Họ", "tên", uppercase_first_letter(ho))
-                graph.create(Relationship(herb_node, "THUỘC", family_node))
+                family_node = get_or_create_node("HỌ_THỰC_VẬT", "tên_họ", uppercase_first_letter(ho))
+                graph.create(Relationship(herb_node, "THUỘC_HỌ", family_node))
 
-            # 4. Tạo node BỘ PHẬN
+            # Parts used
             bo_phan_list = parse_list_field(bo_phan_dung)
             for bo_phan in bo_phan_list:
-                part_node = get_or_create_node("Bộ_Phận", "tên", bo_phan)
-                graph.create(Relationship(herb_node, "DÙNG_PHẦN", part_node))
+                part_node = get_or_create_node("BỘ_PHẬN_DÙNG", "tên_bộ_phận", bo_phan)
+                graph.create(Relationship(herb_node, "SỬ_DỤNG_BỘ_PHẬN", part_node))
 
-            # 5. Tạo node TÁC DỤNG (merge với CÔNG HIỆU từ bài thuốc)
-            if cong_dung_chi_dinh and isinstance(cong_dung_chi_dinh, str):
-                tac_dung_list = re.split(r'[,;]|\s+và\s+', cong_dung_chi_dinh)
-                for tac_dung in tac_dung_list:
-                    tac_dung = tac_dung.strip()
-                    if tac_dung:
-                        effect_node = get_or_create_node("Tác_Dụng", "mô_tả", uppercase_first_letter(tac_dung))
-                        graph.create(Relationship(herb_node, "CÓ", effect_node))
-
-            # 6. Tạo node HÓA CHẤT
+            # Chemical components
             thanh_phan_list = parse_list_field(thanh_phan_hoa_hoc)
             for thanh_phan in thanh_phan_list:
                 if len(thanh_phan) > 3:
-                    chemical_node = get_or_create_node("Hóa_Chất", "tên", thanh_phan)
-                    graph.create(Relationship(herb_node, "CHỨA", chemical_node))
+                    chemical_node = get_or_create_node("THÀNH_PHẦN_HÓA_HỌC", "tên", thanh_phan)
+                    graph.create(Relationship(herb_node, "CHỨA_THÀNH_PHẦN", chemical_node))
 
-            print(f"✓ Đã xử lý cây thuốc: {ten_chinh}")
+            print(f"✓ Processed herb: {ten_chinh}")
 
     except Exception as e:
         print(f"❌ Error processing cây thuốc: {e}")
-        print(f"   Row: {row.get('Tên chính', 'unknown')}")
 
 if __name__ == "__main__":
     # Connect to Neo4j
@@ -200,7 +216,7 @@ if __name__ == "__main__":
     graph = Graph(NEO4J_URI, auth=(NEO4J_USERNAME, NEO4J_PASSWORD), name="dongyi")
     
     print("=" * 60)
-    print("🚀 TẠO KNOWLEDGE GRAPH KẾT HỢP (PHIÊN BẢN TỐI ƯU)")
+    print("🚀 TẠO KNOWLEDGE GRAPH V2 - CẤU TRÚC MỚI")
     print("=" * 60)
     
     print("\n🗑️  Clearing existing graph...")

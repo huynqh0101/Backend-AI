@@ -1,4 +1,4 @@
-# Hệ thống RAG Đông y - Neo4j + Ollama
+# Hệ thống RAG Đông y - Neo4j + Ollama (CẬP NHẬT CHO KG MỚI)
 # ------------------------------------------------
 import os
 import asyncio
@@ -8,17 +8,11 @@ from neo4j import GraphDatabase
 from typing import List, Dict
 import json
 import re
-
-# Thêm import cho Ollama
-try:
-    import requests
-    HAS_REQUESTS = True
-except ImportError:
-    HAS_REQUESTS = False
-    print("⚠️  requests chưa cài đặt. Chạy: pip install requests")
+import unicodedata
+import requests
 
 # --- Cấu hình ---
-print("--- Hệ thống RAG Đông y (Neo4j + Ollama) ---")
+print("--- Hệ thống RAG Đông y (Neo4j + Ollama) - KG V2 ---")
 
 # Neo4j Configuration
 NEO4J_URI = "neo4j://localhost:7687"
@@ -28,74 +22,184 @@ NEO4J_DATABASE = "dongyi"
 
 # Ollama Configuration
 OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_MODEL = "llama3.2:latest"  # Sửa thành llama3.2:latest
+OLLAMA_MODEL = "llama3.2:latest"
 
 print(f"✓ Neo4j Database: {NEO4J_DATABASE}")
 print(f"✓ Ollama URL: {OLLAMA_BASE_URL}")
 print(f"✓ Ollama Model: {OLLAMA_MODEL}")
 
-# --- Query Preprocessor ---
+# --- Text Normalizer ---
+class TextNormalizer:
+    """Chuẩn hóa text để tìm kiếm tốt hơn"""
+    
+    @staticmethod
+    def remove_accents(text: str) -> str:
+        """Bỏ dấu tiếng Việt"""
+        if not isinstance(text, str):
+            return ""
+        
+        # Normalize Unicode (NFD = tách ký tự và dấu)
+        nfd = unicodedata.normalize('NFD', text)
+        
+        # Loại bỏ các dấu (Mn = Mark, Nonspacing)
+        without_accents = ''.join(
+            char for char in nfd 
+            if unicodedata.category(char) != 'Mn'
+        )
+        
+        # Xử lý Đ/đ đặc biệt
+        without_accents = without_accents.replace('Đ', 'D').replace('đ', 'd')
+        
+        return without_accents
+    
+    @staticmethod
+    def normalize(text: str, keep_case: bool = False) -> str:
+        """Chuẩn hóa text toàn diện"""
+        if not isinstance(text, str):
+            return ""
+        
+        # 1. Loại bỏ ký tự đặc biệt (giữ chữ, số, khoảng trắng)
+        text = re.sub(r'[^\w\s]', ' ', text)
+        
+        # 2. Chuẩn hóa khoảng trắng (nhiều space → 1 space)
+        text = re.sub(r'\s+', ' ', text).strip()
+        
+        # 3. Lowercase (trừ khi keep_case=True)
+        if not keep_case:
+            text = text.lower()
+        
+        return text
+    
+    @staticmethod
+    def normalize_for_search(text: str) -> str:
+        """Chuẩn hóa cho tìm kiếm: bỏ dấu + lowercase + trim"""
+        text = TextNormalizer.remove_accents(text)
+        text = TextNormalizer.normalize(text, keep_case=False)
+        return text
+    
+    @staticmethod
+    def create_search_variants(text: str) -> list:
+        """Tạo các biến thể để tìm kiếm"""
+        variants = set()
+        
+        # Variant 1: Gốc
+        variants.add(text.strip())
+        
+        # Variant 2: Lowercase
+        variants.add(text.lower().strip())
+        
+        # Variant 3: Bỏ dấu
+        variants.add(TextNormalizer.remove_accents(text).lower().strip())
+        
+        # Variant 4: Normalize hoàn toàn
+        variants.add(TextNormalizer.normalize_for_search(text))
+        
+        # Variant 5: Bỏ "cây" ở đầu
+        if text.lower().startswith('cây '):
+            variants.add(text[4:].strip())
+            variants.add(TextNormalizer.normalize_for_search(text[4:]))
+        
+        return list(variants)
+
+
+# --- Query Preprocessor (SỬA ĐỔI) ---
 class QueryPreprocessor:
     """Xử lý câu hỏi để trích xuất từ khóa"""
     
-    # Danh sách stop words tiếng Việt
     STOP_WORDS = {
-        'bài', 'thuốc', 'nào', 'trị', 'chữa', 'điều', 'trị', 'có', 'để',
+        'bài', 'thuốc', 'nào', 'trị', 'chữa', 'điều', 'có', 'để',
         'là', 'gì', 'thế', 'như', 'thì', 'được', 'của', 'cho', 'và',
         'một', 'các', 'này', 'kia', 'đó', 'ấy', 'mà', 'với', 'hay',
         'hoặc', 'nhưng', 'tôi', 'muốn', 'cần', 'tìm', 'kiếm', 'xem',
         'biết', 'hỏi', 'giúp', 'em', 'anh', 'chị'
     }
     
-    # Các từ liên quan đến bệnh
     DISEASE_KEYWORDS = {
         'sốt', 'ho', 'viêm', 'đau', 'cảm', 'nhiễm', 'lạnh', 'nóng',
-        'khó', 'tiêu', 'táo', 'bón', 'tiêu', 'chảy', 'kiết', 'lỵ',
-        'mệt', 'nhức', 'đầu', 'họng', 'phổi', 'gan', 'thận', 'tim'
+        'khó', 'tiêu', 'táo', 'bón', 'chảy', 'kiết', 'lỵ',
+        'mệt', 'nhức', 'đầu', 'họng', 'phổi', 'gan', 'thận', 'tim',
+        'khát', 'phiền', 'buồn'
+    }
+    
+    HERB_KEYWORDS = {
+        'cây', 'thảo', 'dược', 'liệu', 'họ', 'thực', 'vật', 'lá', 'rễ', 
+        'thân', 'hoa', 'quả', 'củ', 'vỏ'
     }
     
     @staticmethod
+    def detect_query_type(query: str) -> str:
+        """Phát hiện loại câu hỏi - CẢI TIẾN"""
+        query_normalized = TextNormalizer.normalize_for_search(query)
+        
+        # Check herb keywords
+        herb_count = sum(1 for kw in QueryPreprocessor.HERB_KEYWORDS 
+                        if kw in query_normalized)
+        disease_count = sum(1 for kw in QueryPreprocessor.DISEASE_KEYWORDS 
+                           if kw in query_normalized)
+        
+        if herb_count > disease_count:
+            return "herb"
+        elif disease_count > 0:
+            return "disease"
+        else:
+            return "general"
+    
+    @staticmethod
     def extract_keywords(query: str) -> List[str]:
-        """Trích xuất từ khóa quan trọng từ câu hỏi"""
-        # Lowercase
-        query = query.lower().strip()
+        """Trích xuất keywords - CẢI TIẾN"""
+        query_normalized = TextNormalizer.normalize_for_search(query)
+        words = re.findall(r'\w+', query_normalized)
         
-        # Tách từ
-        words = re.findall(r'\w+', query)
+        # Loại bỏ stop words (đã normalize)
+        stop_words_normalized = {TextNormalizer.normalize_for_search(w) 
+                                 for w in QueryPreprocessor.STOP_WORDS}
+        keywords = [w for w in words 
+                   if w not in stop_words_normalized and len(w) > 1]
         
-        # Lọc stop words
-        keywords = [w for w in words if w not in QueryPreprocessor.STOP_WORDS and len(w) > 1]
-        
-        # Nếu không còn keyword nào, return query gốc
         if not keywords:
-            return [query]
+            return [query_normalized]
         
-        # Ưu tiên các keyword về bệnh
-        disease_keywords = [k for k in keywords if k in QueryPreprocessor.DISEASE_KEYWORDS]
-        if disease_keywords:
-            return disease_keywords
+        # Ưu tiên disease keywords
+        disease_keywords_normalized = {TextNormalizer.normalize_for_search(w) 
+                                       for w in QueryPreprocessor.DISEASE_KEYWORDS}
+        disease_found = [k for k in keywords if k in disease_keywords_normalized]
+        if disease_found:
+            return disease_found
         
         return keywords
     
     @staticmethod
     def build_search_patterns(query: str) -> List[str]:
-        """Tạo nhiều pattern search từ query"""
+        """Tạo search patterns - CẢI TIẾN"""
+        patterns = set()
+        
+        # Pattern 1: Nguyên gốc (trim)
+        patterns.add(query.strip())
+        
+        # Pattern 2: Lowercase
+        patterns.add(query.lower().strip())
+        
+        # Pattern 3: Normalize (bỏ dấu)
+        patterns.add(TextNormalizer.normalize_for_search(query))
+        
+        # Pattern 4: Từ keywords
         keywords = QueryPreprocessor.extract_keywords(query)
-        
-        patterns = []
-        
-        # Pattern 1: Tất cả keywords ghép lại
         if len(keywords) > 1:
-            patterns.append(' '.join(keywords))
+            patterns.add(' '.join(keywords))
+        patterns.update(keywords)
         
-        # Pattern 2: Từng keyword riêng lẻ
-        patterns.extend(keywords)
+        # Pattern 5: Variants (bỏ "cây", "thuốc"...)
+        variants = TextNormalizer.create_search_variants(query)
+        patterns.update(variants)
         
-        # Pattern 3: Query gốc
-        patterns.append(query.lower().strip())
+        # Loại bỏ empty và trùng lặp, giữ thứ tự
+        result = []
+        for p in patterns:
+            p_clean = p.strip()
+            if p_clean and p_clean not in result:
+                result.append(p_clean)
         
-        # Loại bỏ duplicate
-        return list(dict.fromkeys(patterns))
+        return result
 
 
 # --- Ollama Service ---
@@ -106,12 +210,9 @@ class OllamaService:
         self.base_url = base_url.rstrip('/')
         self.model = model
         self.api_url = f"{self.base_url}/api/generate"
-        
-        # Test connection
         self._test_connection()
     
     def _test_connection(self):
-        """Kiểm tra kết nối Ollama"""
         try:
             response = requests.get(f"{self.base_url}/api/tags", timeout=5)
             if response.status_code == 200:
@@ -122,8 +223,6 @@ class OllamaService:
                 
                 if self.model not in model_names:
                     print(f"⚠️  Model '{self.model}' chưa được pull")
-                    print(f"   Model có sẵn gần nhất: {model_names[0] if model_names else 'không có'}")
-                    # Tự động sử dụng model đầu tiên
                     if model_names:
                         self.model = model_names[0]
                         print(f"   ✓ Tự động chuyển sang model: {self.model}")
@@ -134,20 +233,12 @@ class OllamaService:
         except requests.exceptions.RequestException as e:
             print(f"✗ Không kết nối được Ollama tại {self.base_url}")
             print(f"  Lỗi: {e}")
-            print("\n📌 HƯỚNG DẪN CÀI ĐẶT OLLAMA:")
-            print("  1. Tải Ollama: https://ollama.ai/download")
-            print("  2. Cài đặt và chạy Ollama")
-            print("  3. Pull model: ollama pull llama3.2")
-            print("  4. Kiểm tra: ollama list")
             raise
     
     def generate_answer(self, question: str, context: List[Dict]) -> str:
-        """Sinh câu trả lời từ context sử dụng Ollama"""
         try:
-            # Format context
             context_text = self._format_context(context)
             
-            # Tạo prompt
             prompt = f"""Bạn là chuyên gia Y học Đông y Việt Nam. Dựa trên thông tin sau đây từ cơ sở tri thức, hãy trả lời câu hỏi của người dùng một cách chi tiết, chuyên nghiệp và dễ hiểu.
 
 THÔNG TIN TỪ CƠ SỞ TRI THỨC:
@@ -167,7 +258,6 @@ TRẢ LỜI:"""
 
             print("🤖 Đang gọi Ollama...")
             
-            # Gọi Ollama API
             payload = {
                 "model": self.model,
                 "prompt": prompt,
@@ -178,34 +268,21 @@ TRẢ LỜI:"""
                 }
             }
             
-            response = requests.post(
-                self.api_url,
-                json=payload,
-                timeout=120  # 2 minutes timeout
-            )
+            response = requests.post(self.api_url, json=payload, timeout=120)
             
             if response.status_code == 200:
                 result = response.json()
                 answer = result.get('response', '').strip()
-                
-                # Debug info
                 print(f"✓ Ollama response received ({len(answer)} chars)")
                 return answer
             else:
-                print(f"✗ Ollama API error: {response.status_code}")
-                print(f"  Response: {response.text}")
                 return self._fallback_answer(context)
                 
-        except requests.exceptions.Timeout:
-            print("⚠️  Ollama timeout - model đang load hoặc quá chậm")
-            return self._fallback_answer(context)
         except Exception as e:
             print(f"⚠️  Lỗi khi gọi Ollama: {e}")
-            traceback.print_exc()
             return self._fallback_answer(context)
     
     def _format_context(self, context: List[Dict]) -> str:
-        """Format context từ Neo4j thành text"""
         if not context:
             return "Không tìm thấy thông tin liên quan."
         
@@ -218,7 +295,6 @@ TRẢ LỜI:"""
         return "\n".join(formatted)
     
     def _fallback_answer(self, context: List[Dict]) -> str:
-        """Câu trả lời dự phòng khi Ollama lỗi"""
         if not context:
             return "Xin lỗi, tôi không tìm thấy thông tin liên quan trong cơ sở tri thức."
         
@@ -231,106 +307,82 @@ TRẢ LỜI:"""
         return answer
 
 
-# --- Neo4j Query Helper (Cải tiến) ---
+# --- Neo4j Query Helper (SỬA QUERY) ---
 class DongyiQueryHelper:
     def __init__(self, uri, username, password, database="dongyi"):
         self.driver = GraphDatabase.driver(uri, auth=(username, password))
         self.database = database
         self.preprocessor = QueryPreprocessor()
+        self.normalizer = TextNormalizer()  # ← THÊM
         
     def close(self):
         self.driver.close()
     
-    def query_dongyi_kg(self, query_text: str, limit: int = 5) -> List[Dict]:
-        """Truy vấn Knowledge Graph Đông y - Trả về structured data"""
-        try:
-            with self.driver.session(database=self.database) as session:
-                # Debug
-                count_result = session.run("MATCH (n) RETURN count(n) as total")
-                total_entities = count_result.single()["total"]
-                print(f"   📊 Database có {total_entities} nodes")
-                
-                if total_entities == 0:
-                    print(f"   ⚠️  Database '{self.database}' trống!")
-                    return []
-                
-                # Trích xuất keywords
-                search_patterns = self.preprocessor.build_search_patterns(query_text)
-                print(f"   🔍 Tìm kiếm với keywords: {search_patterns[:3]}")
-                
-                # Thử search với từng pattern
-                for pattern in search_patterns:
-                    print(f"      → Thử pattern: '{pattern}'")
-                    
-                    # Chiến lược truy vấn đa tầng
-                    queries = [
-                        self._query_by_disease(pattern, limit),
-                        self._query_by_ingredient(pattern, limit),
-                        self._query_by_effect(pattern, limit),
-                        self._query_by_remedy_name(pattern, limit)
-                    ]
-                    
-                    # Thử từng query cho đến khi có kết quả
-                    for query_func in queries:
-                        try:
-                            results = query_func(session)
-                            if results:
-                                return results
-                        except Exception as e:
-                            continue
-                
-                print("   ✗ Không tìm thấy kết quả với tất cả patterns")
-                return []
-                
-        except Exception as e:
-            print(f"❌ Lỗi truy vấn Neo4j: {e}")
-            traceback.print_exc()
-            return []
-    
     def _query_by_disease(self, query_text: str, limit: int):
-        """Query 1: Tìm theo bệnh - Xử lý NaN"""
+        """Query 1: Tìm theo BỆNH - IMPROVED"""
         def execute(session):
+            variants = TextNormalizer.create_search_variants(query_text)
             query = """
-            MATCH (r:`BÀI THUỐC`)-[:`CHỮA TRỊ`]->(b:`BỆNH`)
-            WHERE b.tên_bệnh IS NOT NULL 
-              AND toString(b.tên_bệnh) <> 'NaN'
-              AND toLower(toString(b.tên_bệnh)) CONTAINS toLower($query_text)
-            OPTIONAL MATCH (r)-[:`CHỨA NGUYÊN LIỆU`]->(n:`NGUYÊN LIỆU`)
-            WHERE n.tên_nguyên_liệu IS NOT NULL AND toString(n.tên_nguyên_liệu) <> 'NaN'
-            OPTIONAL MATCH (r)-[:`CÓ CÔNG HIỆU`]->(e:`CÔNG HIỆU`)
-            WHERE e.tên_công_hiệu IS NOT NULL AND toString(e.tên_công_hiệu) <> 'NaN'
+            MATCH (r:BÀI_THUỐC)-[:ĐIỀU_TRỊ]->(b:BỆNH)
+            WHERE toLower(b.tên_bệnh) CONTAINS toLower($query_text)
+               OR ANY(variant IN $variants WHERE toLower(b.tên_bệnh) CONTAINS toLower(variant))
+            OPTIONAL MATCH (r)-[rel:CHỨA_NGUYÊN_LIỆU]->(n:NGUYÊN_LIỆU)
+            OPTIONAL MATCH (r)-[:CÓ_CÔNG_HIỆU]->(e:CÔNG_HIỆU)
+            OPTIONAL MATCH (r)-[:TRỊ_TRIỆU_CHỨNG]->(s:TRIỆU_CHỨNG)
             RETURN DISTINCT
                 r.tên_bài_thuốc AS ten_bai_thuoc,
                 b.tên_bệnh AS ten_benh,
                 r.liều_lượng_cách_dùng AS lieu_luong,
                 r.chú_ý AS chu_y,
                 r.đối_tượng_phù_hợp AS doi_tuong,
-                collect(DISTINCT n.tên_nguyên_liệu)[..10] AS nguyen_lieu,
-                collect(DISTINCT e.tên_công_hiệu)[..5] AS cong_hieu
+                collect(DISTINCT n.tên_nguyên_liệu) AS nguyen_lieu,
+                collect(DISTINCT e.tên_công_hiệu) AS cong_hieu,
+                collect(DISTINCT s.mô_tả) AS trieu_chung
             LIMIT $limit
             """
-            results = session.run(query, query_text=query_text, limit=limit)
+            results = session.run(query, query_text=query_text, variants=variants, limit=limit)
             return self._format_results(results, "bệnh")
         return execute
     
-    def _query_by_ingredient(self, query_text: str, limit: int):
-        """Query 2: Tìm theo nguyên liệu - Xử lý NaN"""
+    def _query_by_symptom(self, query_text: str, limit: int):
+        """Query 2: Tìm theo TRIỆU_CHỨNG"""
         def execute(session):
             query = """
-            MATCH (r:`BÀI THUỐC`)-[:`CHỨA NGUYÊN LIỆU`]->(n:`NGUYÊN LIỆU`)
-            WHERE n.tên_nguyên_liệu IS NOT NULL 
-              AND toString(n.tên_nguyên_liệu) <> 'NaN'
-              AND toLower(toString(n.tên_nguyên_liệu)) CONTAINS toLower($query_text)
-            OPTIONAL MATCH (r)-[:`CHỮA TRỊ`]->(b:`BỆNH`)
-            WHERE b.tên_bệnh IS NOT NULL AND toString(b.tên_bệnh) <> 'NaN'
-            OPTIONAL MATCH (r)-[:`CÓ CÔNG HIỆU`]->(e:`CÔNG HIỆU`)
-            WHERE e.tên_công_hiệu IS NOT NULL AND toString(e.tên_công_hiệu) <> 'NaN'
+            MATCH (r:BÀI_THUỐC)-[:TRỊ_TRIỆU_CHỨNG]->(s:TRIỆU_CHỨNG)
+            WHERE toLower(s.mô_tả) CONTAINS toLower($query_text)
+            OPTIONAL MATCH (r)-[:ĐIỀU_TRỊ]->(b:BỆNH)
+            OPTIONAL MATCH (r)-[rel:CHỨA_NGUYÊN_LIỆU]->(n:NGUYÊN_LIỆU)
+            OPTIONAL MATCH (r)-[:CÓ_CÔNG_HIỆU]->(e:CÔNG_HIỆU)
+            RETURN DISTINCT
+                r.tên_bài_thuốc AS ten_bai_thuoc,
+                s.mô_tả AS trieu_chung_chinh,
+                r.liều_lượng_cách_dùng AS lieu_luong,
+                collect(DISTINCT b.tên_bệnh) AS benh,
+                collect(DISTINCT n.tên_nguyên_liệu) AS nguyen_lieu,
+                collect(DISTINCT e.tên_công_hiệu) AS cong_hieu
+            LIMIT $limit
+            """
+            results = session.run(query, query_text=query_text, limit=limit)
+            return self._format_results(results, "triệu chứng")
+        return execute
+    
+    def _query_by_ingredient(self, query_text: str, limit: int):
+        """Query 3: Tìm theo NGUYÊN_LIỆU - FIXED"""
+        def execute(session):
+            query = """
+            MATCH (r:BÀI_THUỐC)-[rel:CHỨA_NGUYÊN_LIỆU]->(n:NGUYÊN_LIỆU)
+            WHERE toLower(n.tên_nguyên_liệu) CONTAINS toLower($query_text)
+            OPTIONAL MATCH (r)-[:ĐIỀU_TRỊ]->(b:BỆNH)
+            OPTIONAL MATCH (r)-[:CÓ_CÔNG_HIỆU]->(e:CÔNG_HIỆU)
+            OPTIONAL MATCH (n)-[:LÀ_DƯỢC_LIỆU_TỪ]->(c:CÂY_THUỐC)
             RETURN DISTINCT
                 r.tên_bài_thuốc AS ten_bai_thuoc,
                 n.tên_nguyên_liệu AS nguyen_lieu_chinh,
-                r.liều_lượng_cách_dùng AS lieu_luong,
-                collect(DISTINCT b.tên_bệnh)[..5] AS benh,
-                collect(DISTINCT e.tên_công_hiệu)[..5] AS cong_hieu
+                r.liều_lượng_cách_dùng AS lieu_luong,  // ← SỬA: Lấy từ node BÀI_THUỐC
+                c.tên_chính AS cay_thuoc,
+                c.tính_vị_tác_dụng AS tinh_vi,
+                collect(DISTINCT b.tên_bệnh) AS benh,
+                collect(DISTINCT e.tên_công_hiệu) AS cong_hieu
             LIMIT $limit
             """
             results = session.run(query, query_text=query_text, limit=limit)
@@ -338,23 +390,19 @@ class DongyiQueryHelper:
         return execute
     
     def _query_by_effect(self, query_text: str, limit: int):
-        """Query 3: Tìm theo công hiệu - Xử lý NaN"""
+        """Query 4: Tìm theo CÔNG_HIỆU"""
         def execute(session):
             query = """
-            MATCH (r:`BÀI THUỐC`)-[:`CÓ CÔNG HIỆU`]->(e:`CÔNG HIỆU`)
-            WHERE e.tên_công_hiệu IS NOT NULL 
-              AND toString(e.tên_công_hiệu) <> 'NaN'
-              AND toLower(toString(e.tên_công_hiệu)) CONTAINS toLower($query_text)
-            OPTIONAL MATCH (r)-[:`CHỮA TRỊ`]->(b:`BỆNH`)
-            WHERE b.tên_bệnh IS NOT NULL AND toString(b.tên_bệnh) <> 'NaN'
-            OPTIONAL MATCH (r)-[:`CHỨA NGUYÊN LIỆU`]->(n:`NGUYÊN LIỆU`)
-            WHERE n.tên_nguyên_liệu IS NOT NULL AND toString(n.tên_nguyên_liệu) <> 'NaN'
+            MATCH (r:BÀI_THUỐC)-[:CÓ_CÔNG_HIỆU]->(e:CÔNG_HIỆU)
+            WHERE toLower(e.tên_công_hiệu) CONTAINS toLower($query_text)
+            OPTIONAL MATCH (r)-[:ĐIỀU_TRỊ]->(b:BỆNH)
+            OPTIONAL MATCH (r)-[rel:CHỨA_NGUYÊN_LIỆU]->(n:NGUYÊN_LIỆU)
             RETURN DISTINCT
                 r.tên_bài_thuốc AS ten_bai_thuoc,
                 e.tên_công_hiệu AS cong_hieu_chinh,
                 r.liều_lượng_cách_dùng AS lieu_luong,
-                collect(DISTINCT b.tên_bệnh)[..5] AS benh,
-                collect(DISTINCT n.tên_nguyên_liệu)[..10] AS nguyen_lieu
+                collect(DISTINCT b.tên_bệnh) AS benh,
+                collect(DISTINCT n.tên_nguyên_liệu) AS nguyen_lieu
             LIMIT $limit
             """
             results = session.run(query, query_text=query_text, limit=limit)
@@ -362,89 +410,142 @@ class DongyiQueryHelper:
         return execute
     
     def _query_by_remedy_name(self, query_text: str, limit: int):
-        """Query 4: Tìm theo tên bài thuốc - Xử lý NaN"""
+        """Query 5: Tìm theo tên BÀI_THUỐC"""
         def execute(session):
             query = """
-            MATCH (r:`BÀI THUỐC`)
-            WHERE r.tên_bài_thuốc IS NOT NULL 
-              AND toString(r.tên_bài_thuốc) <> 'NaN'
-              AND toLower(toString(r.tên_bài_thuốc)) CONTAINS toLower($query_text)
-            OPTIONAL MATCH (r)-[:`CHỮA TRỊ`]->(b:`BỆNH`)
-            WHERE b.tên_bệnh IS NOT NULL AND toString(b.tên_bệnh) <> 'NaN'
-            OPTIONAL MATCH (r)-[:`CHỨA NGUYÊN LIỆU`]->(n:`NGUYÊN LIỆU`)
-            WHERE n.tên_nguyên_liệu IS NOT NULL AND toString(n.tên_nguyên_liệu) <> 'NaN'
-            OPTIONAL MATCH (r)-[:`CÓ CÔNG HIỆU`]->(e:`CÔNG HIỆU`)
-            WHERE e.tên_công_hiệu IS NOT NULL AND toString(e.tên_công_hiệu) <> 'NaN'
+            MATCH (r:BÀI_THUỐC)
+            WHERE toLower(r.tên_bài_thuốc) CONTAINS toLower($query_text)
+            OPTIONAL MATCH (r)-[:ĐIỀU_TRỊ]->(b:BỆNH)
+            OPTIONAL MATCH (r)-[rel:CHỨA_NGUYÊN_LIỆU]->(n:NGUYÊN_LIỆU)
+            OPTIONAL MATCH (r)-[:CÓ_CÔNG_HIỆU]->(e:CÔNG_HIỆU)
             RETURN DISTINCT
                 r.tên_bài_thuốc AS ten_bai_thuoc,
                 r.liều_lượng_cách_dùng AS lieu_luong,
                 r.chú_ý AS chu_y,
-                collect(DISTINCT b.tên_bệnh)[..5] AS benh,
-                collect(DISTINCT n.tên_nguyên_liệu)[..10] AS nguyen_lieu,
-                collect(DISTINCT e.tên_công_hiệu)[..5] AS cong_hieu
+                collect(DISTINCT b.tên_bệnh) AS benh,
+                collect(DISTINCT n.tên_nguyên_liệu) AS nguyen_lieu,
+                collect(DISTINCT e.tên_công_hiệu) AS cong_hieu
             LIMIT $limit
             """
             results = session.run(query, query_text=query_text, limit=limit)
             return self._format_results(results, "tên bài thuốc")
         return execute
     
+    def _query_by_herb(self, query_text: str, limit: int):
+        """Query 6: Tìm theo CÂY_THUỐC - IMPROVED"""
+        def execute(session):
+            # Tạo variants để tìm kiếm
+            search_variants = TextNormalizer.create_search_variants(query_text)
+            
+            # Tìm với nhiều điều kiện
+            query = """
+            MATCH (c:CÂY_THUỐC)
+            WHERE toLower(c.tên_chính) CONTAINS toLower($query_text)
+               OR toLower(c.tên_khoa_học) CONTAINS toLower($query_text)
+               OR toLower(c.họ) CONTAINS toLower($query_text)
+               OR ANY(variant IN $variants WHERE toLower(c.tên_chính) CONTAINS toLower(variant))
+               OR toLower(c.tên_khác) CONTAINS toLower($query_text)
+            
+            OPTIONAL MATCH (c)<-[:LÀ_DƯỢC_LIỆU_TỪ]-(n:NGUYÊN_LIỆU)<-[:CHỨA_NGUYÊN_LIỆU]-(r:BÀI_THUỐC)
+            OPTIONAL MATCH (c)-[:CÓ_TÊN_GỌI_KHÁC]->(tk:TÊN_KHÁC)
+            OPTIONAL MATCH (c)-[:THUỘC_HỌ]->(h:HỌ_THỰC_VẬT)
+            OPTIONAL MATCH (c)-[:SỬ_DỤNG_BỘ_PHẬN]->(bp:BỘ_PHẬN_DÙNG)
+            OPTIONAL MATCH (c)-[:CHỨA_THÀNH_PHẦN]->(tp:THÀNH_PHẦN_HÓA_HỌC)
+            
+            RETURN DISTINCT
+                c.tên_chính AS ten_cay_thuoc,
+                c.tên_khoa_học AS ten_khoa_hoc,
+                c.tên_khác AS ten_khac_str,
+                c.họ AS ho,
+                c.mô_tả AS mo_ta,
+                c.nơi_sống_thu_hái AS noi_song,
+                c.thành_phần_hóa_học AS thanh_phan_hoa_hoc,
+                c.tính_vị_tác_dụng AS tinh_vi,
+                c.công_dụng_chỉ_định AS cong_dung,
+                c.liều_dùng AS lieu_dung,
+                c.đơn_thuốc AS don_thuoc,
+                collect(DISTINCT tk.tên) AS ten_khac,
+                collect(DISTINCT h.tên_họ) AS ho_thuc_vat,
+                collect(DISTINCT bp.tên_bộ_phận) AS cac_bo_phan,
+                collect(DISTINCT tp.tên) AS cac_thanh_phan,
+                collect(DISTINCT r.tên_bài_thuốc)[..5] AS bai_thuoc_su_dung
+            LIMIT $limit
+            """
+            results = session.run(query, 
+                                query_text=query_text, 
+                                variants=search_variants,
+                                limit=limit)
+            return self._format_herb_results(results, "cây thuốc")
+        return execute
+    
     def _format_results(self, results, query_type: str) -> List[Dict]:
-        """Format kết quả từ Neo4j - Xử lý NaN"""
+        """Format kết quả từ Neo4j - FIXED"""
         entities = []
         for record in results:
             ten_bai = record.get('ten_bai_thuoc', 'N/A')
             
-            # Skip nếu tên bài thuốc là NaN
-            if not ten_bai or str(ten_bai) == 'NaN':
+            if not ten_bai or str(ten_bai) == 'None':
                 continue
             
-            # Build description
             description_parts = []
             
             # Bệnh
-            if 'ten_benh' in record and record['ten_benh'] and str(record['ten_benh']) != 'NaN':
+            if 'ten_benh' in record and record['ten_benh']:
                 description_parts.append(f"**Chữa bệnh:** {record['ten_benh']}")
             elif 'benh' in record:
-                benh_list = [b for b in record.get('benh', []) if b and str(b) != 'NaN']
+                benh_list = [b for b in record.get('benh', []) if b and str(b) != 'None']
                 if benh_list:
                     description_parts.append(f"**Chữa bệnh:** {', '.join(benh_list)}")
             
-            # Nguyên liệu
-            if 'nguyen_lieu_chinh' in record and record['nguyen_lieu_chinh'] and str(record['nguyen_lieu_chinh']) != 'NaN':
-                description_parts.append(f"**Nguyên liệu chính:** {record['nguyen_lieu_chinh']}")
+            # Triệu chứng
+            if 'trieu_chung_chinh' in record and record['trieu_chung_chinh']:
+                description_parts.append(f"**Triệu chứng:** {record['trieu_chung_chinh']}")
+            elif 'trieu_chung' in record:
+                tc_list = [tc for tc in record.get('trieu_chung', []) if tc and str(tc) != 'None']
+                if tc_list:
+                    description_parts.append(f"**Triệu chứng:** {', '.join(tc_list)}")
             
-            nguyen_lieu = []
-            if 'nguyen_lieu' in record:
-                nguyen_lieu = [nl for nl in record.get('nguyen_lieu', []) if nl and str(nl) != 'NaN']
+            # Nguyên liệu
+            if 'nguyen_lieu_chinh' in record and record['nguyen_lieu_chinh']:
+                description_parts.append(f"**Nguyên liệu chính:** {record['nguyen_lieu_chinh']}")
+                
+                # Thông tin cây thuốc
+                if record.get('cay_thuoc'):
+                    description_parts.append(f"  - Nguồn gốc: {record['cay_thuoc']}")
+                if record.get('tinh_vi'):
+                    description_parts.append(f"  - Tính vị: {record['tinh_vi'][:200]}...")
+            
+            nguyen_lieu = [nl for nl in record.get('nguyen_lieu', []) if nl and str(nl) != 'None']
             if nguyen_lieu:
-                description_parts.append(f"**Thành phần:** {', '.join(nguyen_lieu)}")
+                description_parts.append(f"**Thành phần:** {', '.join(nguyen_lieu[:10])}")
             
             # Công hiệu
-            if 'cong_hieu_chinh' in record and record['cong_hieu_chinh'] and str(record['cong_hieu_chinh']) != 'NaN':
+            if 'cong_hieu_chinh' in record and record['cong_hieu_chinh']:
                 description_parts.append(f"**Công hiệu chính:** {record['cong_hieu_chinh']}")
             
-            cong_hieu = []
-            if 'cong_hieu' in record:
-                cong_hieu = [ch for ch in record.get('cong_hieu', []) if ch and str(ch) != 'NaN']
+            cong_hieu = [ch for ch in record.get('cong_hieu', []) if ch and str(ch) != 'None']
             if cong_hieu:
                 description_parts.append(f"**Các công hiệu:** {', '.join(cong_hieu)}")
             
-            # Liều lượng
+            # Liều lượng - SỬA ĐÂY
             lieu_luong = record.get('lieu_luong', '')
-            if lieu_luong and isinstance(lieu_luong, str) and str(lieu_luong) != 'NaN':
-                description_parts.append(f"**Liều lượng & Cách dùng:** {lieu_luong[:500]}...")
+            if lieu_luong and str(lieu_luong) != 'None':
+                # Rút ngắn nếu quá dài
+                if len(str(lieu_luong)) > 500:
+                    description_parts.append(f"**Liều lượng & Cách dùng:** {str(lieu_luong)[:500]}...")
+                else:
+                    description_parts.append(f"**Liều lượng & Cách dùng:** {lieu_luong}")
             
             # Chú ý
             chu_y = record.get('chu_y', '')
-            if chu_y and isinstance(chu_y, str) and str(chu_y) != 'NaN':
-                description_parts.append(f"**Chú ý:** {chu_y[:300]}...")
+            if chu_y and str(chu_y) != 'None':
+                description_parts.append(f"**Chú ý:** {str(chu_y)[:300]}...")
             
             # Đối tượng
             doi_tuong = record.get('doi_tuong', '')
-            if doi_tuong and isinstance(doi_tuong, str) and str(doi_tuong) != 'NaN':
+            if doi_tuong and str(doi_tuong) != 'None':
                 description_parts.append(f"**Đối tượng phù hợp:** {doi_tuong}")
             
-            # Chỉ thêm nếu có ít nhất một thông tin
             if description_parts:
                 entities.append({
                     'ten_bai_thuoc': ten_bai,
@@ -457,18 +558,140 @@ class DongyiQueryHelper:
         
         return entities
 
+    def _format_herb_results(self, results, query_type: str) -> List[Dict]:
+        """Format kết quả từ Neo4j cho CÂY_THUỐC"""
+        entities = []
+        for record in results:
+            ten_cay = record.get('ten_cay_thuoc', 'N/A')
+            
+            if not ten_cay or str(ten_cay) == 'None':
+                continue
+            
+            description_parts = []
+            
+            # Tên khoa học
+            if record.get('ten_khoa_hoc'):
+                description_parts.append(f"**Tên khoa học:** _{record['ten_khoa_hoc']}_")
+            
+            # Họ thực vật
+            if record.get('ho'):
+                description_parts.append(f"**Họ:** {record['ho']}")
+            
+            # Tên khác
+            ten_khac = [tk for tk in record.get('ten_khac', []) if tk and str(tk) != 'None']
+            if ten_khac:
+                description_parts.append(f"**Tên gọi khác:** {', '.join(ten_khac)}")
+            
+            # Mô tả
+            mo_ta = record.get('mo_ta', '')
+            if mo_ta and str(mo_ta) != 'None':
+                description_parts.append(f"**Mô tả:** {str(mo_ta)[:300]}...")
+            
+            # Bộ phận dùng
+            if record.get('bo_phan_dung'):
+                description_parts.append(f"**Bộ phận dùng:** {record['bo_phan_dung']}")
+            
+            # Nơi sống
+            if record.get('noi_song'):
+                description_parts.append(f"**Nơi sống và thu hái:** {str(record['noi_song'])[:200]}...")
+            
+            # Thành phần hóa học
+            if record.get('thanh_phan_hoa_hoc'):
+                description_parts.append(f"**Thành phần hóa học:** {str(record['thanh_phan_hoa_hoc'])[:200]}...")
+            
+            # Tính vị tác dụng
+            tinh_vi = record.get('tinh_vi', '')
+            if tinh_vi and str(tinh_vi) != 'None':
+                description_parts.append(f"**Tính vị, tác dụng:** {str(tinh_vi)[:300]}...")
+            
+            # Liều dùng
+            if record.get('lieu_dung'):
+                description_parts.append(f"**Liều dùng:** {record['lieu_dung']}")
+            
+            # Bài thuốc sử dụng
+            bai_thuoc = [bt for bt in record.get('bai_thuoc_su_dung', []) if bt and str(bt) != 'None']
+            if bai_thuoc:
+                description_parts.append(f"**Các bài thuốc sử dụng:** {', '.join(bai_thuoc)}")
+            
+            if description_parts:
+                entities.append({
+                    'ten_bai_thuoc': ten_cay,  # Giữ key này để tương thích với OllamaService
+                    'description': '\n'.join(description_parts),
+                    'query_type': query_type
+                })
+        
+        if entities:
+            print(f"   ✓ Tìm thấy {len(entities)} cây thuốc")
+        
+        return entities
+
+    def query_dongyi_kg(self, query_text: str, limit: int = 5) -> List[Dict]:
+        """Truy vấn Knowledge Graph V2 - Phát hiện thông minh"""
+        try:
+            with self.driver.session(database=self.database) as session:
+                # Debug
+                count_result = session.run("MATCH (n) RETURN count(n) as total")
+                total_entities = count_result.single()["total"]
+                print(f"   📊 Database có {total_entities} nodes")
+                
+                if total_entities == 0:
+                    print(f"   ⚠️  Database '{self.database}' trống!")
+                    return []
+                
+                # Phát hiện loại query
+                query_type = self.preprocessor.detect_query_type(query_text)
+                print(f"   🎯 Loại câu hỏi: {query_type.upper()}")
+                
+                # Trích xuất keywords
+                search_patterns = self.preprocessor.build_search_patterns(query_text)
+                print(f"   🔍 Tìm kiếm với keywords: {search_patterns[:3]}")
+                
+                for pattern in search_patterns:
+                    print(f"      → Thử pattern: '{pattern}'")
+                    
+                    # Chọn thứ tự query dựa trên loại câu hỏi
+                    if query_type == "herb":
+                        queries = [
+                            self._query_by_herb(pattern, limit),
+                            self._query_by_ingredient(pattern, limit),
+                            self._query_by_remedy_name(pattern, limit)
+                        ]
+                    else:
+                        queries = [
+                            self._query_by_disease(pattern, limit),
+                            self._query_by_symptom(pattern, limit),
+                            self._query_by_ingredient(pattern, limit),
+                            self._query_by_effect(pattern, limit),
+                            self._query_by_remedy_name(pattern, limit),
+                            self._query_by_herb(pattern, limit)
+                        ]
+                
+                    for query_func in queries:
+                        try:
+                            results = query_func(session)
+                            if results:
+                                return results
+                        except Exception as e:
+                            continue
+            
+            print("   ✗ Không tìm thấy kết quả với tất cả patterns")
+            return []
+                
+        except Exception as e:
+            print(f"❌ Lỗi truy vấn Neo4j: {e}")
+            traceback.print_exc()
+            return []
 
 # --- RAG System ---
 async def interactive_rag_query():
     """Hệ thống RAG tương tác - Neo4j + Ollama"""
     print("\n" + "="*70)
-    print("🏥 HỆ THỐNG RAG TRA CỨU ĐÔNG Y (OLLAMA)")
+    print("🏥 HỆ THỐNG RAG TRA CỨU ĐÔNG Y V2 (OLLAMA)")
     print("="*70)
     print("Nhập 'exit' để thoát, 'help' để xem hướng dẫn")
     print("Nhập 'mode' để chuyển chế độ (rag/raw)")
     print("="*70 + "\n")
     
-    # Khởi tạo Neo4j
     try:
         neo4j_helper = DongyiQueryHelper(NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, NEO4J_DATABASE)
         with neo4j_helper.driver.session(database=neo4j_helper.database) as session:
@@ -478,7 +701,6 @@ async def interactive_rag_query():
         print(f"✗ Không kết nối được Neo4j: {e}")
         return
     
-    # Khởi tạo Ollama
     ollama_service = None
     try:
         ollama_service = OllamaService()
@@ -515,22 +737,19 @@ async def interactive_rag_query():
                 
                 print(f"\n🔍 Đang tìm kiếm...\n")
                 
-                # Bước 1: Truy vấn Neo4j
                 context = neo4j_helper.query_dongyi_kg(user_query, limit=5)
                 
                 if not context:
                     print("❌ Không tìm thấy thông tin liên quan")
-                    print("💡 Thử từ khóa: 'sốt', 'ho', 'đau đầu', 'lá tre', 'thạch cao'\n")
+                    print("💡 Thử từ khóa: 'sốt', 'ho', 'đau đầu', 'lá tre', 'thạch cao', 'thanh nhiệt'\n")
                     continue
                 
-                # Bước 2: Sinh câu trả lời
                 if mode == "rag" and ollama_service:
                     print("=" * 70)
                     answer = ollama_service.generate_answer(user_query, context)
                     print(answer)
                     print("=" * 70)
                 else:
-                    # Chế độ RAW - hiển thị dữ liệu thô
                     print(f"📋 KẾT QUẢ TÌM KIẾM ({len(context)} bài thuốc):\n")
                     for i, entity in enumerate(context, 1):
                         print(f"{'─'*70}")
@@ -552,34 +771,23 @@ async def interactive_rag_query():
 
 
 def print_help():
-    """In hướng dẫn"""
     print("\n" + "="*70)
     print("📖 HƯỚNG DẪN SỬ DỤNG")
     print("="*70)
     print("• Nhập câu hỏi về Đông y để tìm kiếm bài thuốc")
     print("• 'help' - Xem hướng dẫn")
-    print("• 'mode' - Chuyển đổi giữa chế độ RAG (có LLM) và RAW (dữ liệu thô)")
+    print("• 'mode' - Chuyển đổi giữa chế độ RAG và RAW")
     print("• 'exit' - Thoát chương trình")
-    print("\n🎯 CHẾ ĐỘ:")
-    print("   RAG  - Sử dụng Ollama để sinh câu trả lời tự nhiên")
-    print("   RAW  - Hiển thị dữ liệu thô từ Neo4j")
     print("\n💡 VÍ DỤ CÂU HỎI:")
-    print("   - Bài thuốc chữa sốt")
+    print("   - Bài thuốc chữa sốt cao")
     print("   - Thuốc nào có lá tre")
     print("   - Công hiệu thanh nhiệt")
-    print("   - Chữa ho cho trẻ em")
-    print("   - Nguyên liệu thạch cao dùng để làm gì")
-    print("   - Bài thuốc nào trị sốt cao")
-    print("\n📌 CÀI ĐẶT OLLAMA:")
-    print("   1. Tải: https://ollama.ai/download")
-    print("   2. Cài đặt và chạy Ollama")
-    print("   3. Pull model: ollama pull llama3.2")
-    print("   4. Kiểm tra: ollama list")
+    print("   - Chữa ho khát nước")
+    print("   - Triệu chứng sốt buồn phiền")
     print("="*70 + "\n")
 
 
 async def main():
-    """Hàm chính"""
     try:
         await interactive_rag_query()
     except Exception as e:
@@ -594,5 +802,3 @@ if __name__ == "__main__":
         print("\n✓ Chương trình hoàn tất!\n")
     except KeyboardInterrupt:
         print("\n⚠️  Dừng bởi người dùng\n")
-    except Exception as e:
-        print(f"\n✗ Lỗi: {e}\n")
